@@ -1,0 +1,13 @@
+{
+  "files.associations": {
+    "__locale": "c",
+    "ios": "c",
+    "atomic": "c",
+    "bitset": "c",
+    "queue": "c",
+    "algorithm": "c",
+    "random": "c",
+    "complex": "c",
+    "cmath": "c"
+  }
+}

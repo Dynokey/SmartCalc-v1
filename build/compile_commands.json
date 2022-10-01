@@ -1,0 +1,42 @@
+[
+{
+  "directory": "/Users/sparrvio/SmartCalc/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/sparrvio/SmartCalc/build -I/Users/sparrvio/SmartCalc -I/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/include -iframework /usr/local/lib -isystem /usr/local/lib/QtCore.framework/Headers -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -fPIC -std=gnu++17 -o CMakeFiles/SmartCalc.dir/SmartCalc_autogen/mocs_compilation.cpp.o -c /Users/sparrvio/SmartCalc/build/SmartCalc_autogen/mocs_compilation.cpp",
+  "file": "/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/mocs_compilation.cpp"
+},
+{
+  "directory": "/Users/sparrvio/SmartCalc/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/sparrvio/SmartCalc/build -I/Users/sparrvio/SmartCalc -I/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/include -iframework /usr/local/lib -isystem /usr/local/lib/QtCore.framework/Headers -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -fPIC -std=gnu++17 -o CMakeFiles/SmartCalc.dir/main.cpp.o -c /Users/sparrvio/SmartCalc/main.cpp",
+  "file": "/Users/sparrvio/SmartCalc/main.cpp"
+},
+{
+  "directory": "/Users/sparrvio/SmartCalc/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/sparrvio/SmartCalc/build -I/Users/sparrvio/SmartCalc -I/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/include -iframework /usr/local/lib -isystem /usr/local/lib/QtCore.framework/Headers -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -fPIC -std=gnu++17 -o CMakeFiles/SmartCalc.dir/sparrvio.cpp.o -c /Users/sparrvio/SmartCalc/sparrvio.cpp",
+  "file": "/Users/sparrvio/SmartCalc/sparrvio.cpp"
+},
+{
+  "directory": "/Users/sparrvio/SmartCalc/build",
+  "command": "/usr/bin/clang -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/sparrvio/SmartCalc/build -I/Users/sparrvio/SmartCalc -I/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/include -iframework /usr/local/lib -isystem /usr/local/lib/QtCore.framework/Headers -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -fPIC -o CMakeFiles/SmartCalc.dir/src/calc.c.o -c /Users/sparrvio/SmartCalc/src/calc.c",
+  "file": "/Users/sparrvio/SmartCalc/src/calc.c"
+},
+{
+  "directory": "/Users/sparrvio/SmartCalc/build",
+  "command": "/usr/bin/clang -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/sparrvio/SmartCalc/build -I/Users/sparrvio/SmartCalc -I/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/include -iframework /usr/local/lib -isystem /usr/local/lib/QtCore.framework/Headers -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -fPIC -o CMakeFiles/SmartCalc.dir/src/parser.c.o -c /Users/sparrvio/SmartCalc/src/parser.c",
+  "file": "/Users/sparrvio/SmartCalc/src/parser.c"
+},
+{
+  "directory": "/Users/sparrvio/SmartCalc/build",
+  "command": "/usr/bin/clang -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/sparrvio/SmartCalc/build -I/Users/sparrvio/SmartCalc -I/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/include -iframework /usr/local/lib -isystem /usr/local/lib/QtCore.framework/Headers -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -fPIC -o CMakeFiles/SmartCalc.dir/src/notation.c.o -c /Users/sparrvio/SmartCalc/src/notation.c",
+  "file": "/Users/sparrvio/SmartCalc/src/notation.c"
+},
+{
+  "directory": "/Users/sparrvio/SmartCalc/build",
+  "command": "/usr/bin/clang -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/sparrvio/SmartCalc/build -I/Users/sparrvio/SmartCalc -I/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/include -iframework /usr/local/lib -isystem /usr/local/lib/QtCore.framework/Headers -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -fPIC -o CMakeFiles/SmartCalc.dir/src/validator.c.o -c /Users/sparrvio/SmartCalc/src/validator.c",
+  "file": "/Users/sparrvio/SmartCalc/src/validator.c"
+},
+{
+  "directory": "/Users/sparrvio/SmartCalc/build",
+  "command": "/usr/bin/clang -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/sparrvio/SmartCalc/build -I/Users/sparrvio/SmartCalc -I/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/include -iframework /usr/local/lib -isystem /usr/local/lib/QtCore.framework/Headers -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -fPIC -o CMakeFiles/SmartCalc.dir/src/my_main.c.o -c /Users/sparrvio/SmartCalc/src/my_main.c",
+  "file": "/Users/sparrvio/SmartCalc/src/my_main.c"
+}
+]

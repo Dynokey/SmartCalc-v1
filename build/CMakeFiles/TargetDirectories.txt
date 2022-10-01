@@ -1,0 +1,4 @@
+/Users/sparrvio/SmartCalc/build/CMakeFiles/SmartCalc.dir
+/Users/sparrvio/SmartCalc/build/CMakeFiles/edit_cache.dir
+/Users/sparrvio/SmartCalc/build/CMakeFiles/rebuild_cache.dir
+/Users/sparrvio/SmartCalc/build/CMakeFiles/SmartCalc_autogen.dir
