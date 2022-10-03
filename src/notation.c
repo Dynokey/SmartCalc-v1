@@ -12,7 +12,7 @@ int notation(s21_SmartCalc src, s21_SmartCalc data){
         // если встречаем унарный минус, то кладем в выходную строку велью 0.0, унарный минус меняем на обычный минус
         if((src[i].type == un_minus && src[i - 1].type == bracket_l)){
             data[count_data].num = count_data;
-            data[count_data].type = 1;
+            data[count_data].type = number;
             data[count_data].priority = 0;
             data[count_data].value = 0.0;
             count_data++;

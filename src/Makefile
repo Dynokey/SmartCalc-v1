@@ -1,6 +1,6 @@
 CC = gcc 
 GFLAGS = -Wall -Werror -Wextra  #-g -fsanitize=address
-src = new_main.c notation.c validator.c calc.c my_main.c parser.c s21_SmartCalc.h
+src = new_main.c notation.c validator.c calc.c my_main.c parser.c second_func.c credit_calc_ann.c credit_calc_diff.c s21_SmartCalc.h
 
 all: s21_SmartCalc 
 

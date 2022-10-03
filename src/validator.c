@@ -2,10 +2,11 @@
 
 int validator(char* str) {
   char sign_full[32] = {'+', '-', '*', '/', '^', 'm', 's', 'c', 't', 'C', 'S', 'T', 'q', 'l', 'L', '('};
-  char sing_func[16] = {'s', 'c', 't', 'C', 'S', 'T', 'q', 'l', 'L',};
+  char sign_func[16] = {'s', 'c', 't', 'C', 'S', 'T', 'q', 'l', 'L',};
   char sign[16] = {'+', '-', '*', '/', '^', 'm', '.'};
   char sign_m[8] = {'*', '/', '^', 'm', ')'};
   char num[16] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', ')'};
+  char symbol_for_back [24] = {'+', '-', '*', '/', '^', '+', '-', '*', '/', '^', 'm'};
   int ret = 0;
   int len = strlen(str);
   int count_bracket = 0;
@@ -35,15 +36,20 @@ int validator(char* str) {
       ret = 1;
     }
     // после вызова функции должна быть '('
-    // if(strchr(sing_func, str[i]) != NULL && str[i + 3] != '(') {
+    // if(strchr(sign_func, str[i]) != NULL && str[i + 3] != '(') {
     //   ret = 1;
     // }
     // перед перед функцией не должно быть точки, числа или ')'
-    if(i > 0 && strchr(sing_func, str[i]) != NULL && strchr(num, str[i - 1]) != NULL){
+    if(i > 0 && strchr(sign_func, str[i]) != NULL && strchr(num, str[i - 1]) != NULL){
       ret = 1;
     }
     // перед '(' не может находиться число или точка
     if(i > 0 && str[i] == '(' && strchr(num, str[i - 1]) != NULL){
+      ret = 1;
+    }
+
+    // для backSpace перед вызовом функции не может быть букв
+    if(i > 0 && strchr(sign_func, str[i]) != NULL && strchr(symbol_for_back, str[i - 1]) == NULL){
       ret = 1;
     }
     // меняем в строке 'sin' на 's', 'cos' на 'c' и т.д.

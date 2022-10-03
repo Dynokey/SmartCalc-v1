@@ -58,4 +58,10 @@ int validator(char *);
 double calc(s21_SmartCalc from_notation);
 void str(char *arr);
 int my_main(char* str, double*);
+double credit_calc_ann(char* sum, int mounth, double percent);
+double credit_calc_diff(char* sum, int mounth, double percent);
+
+double every_month (double dum, double percent, int mounth);
+double over_pay_credit(double sum, double mounth);
+
 #endif // S21_SMARTCALC_H
