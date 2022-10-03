@@ -3,7 +3,8 @@
 
 #include <QMainWindow>
 #include <iostream>
-
+#include <creditcalc.h>
+#include <form.h>
 
 extern "C" {
 #include "src/s21_SmartCalc.h"
@@ -20,14 +21,16 @@ class sparrvio : public QMainWindow
 public:
     sparrvio(QWidget *parent = nullptr);
     ~sparrvio();
+    int flag = 0;
 
 private:
     Ui::sparrvio *ui;
+    CreditCalc win_credit;
+
 
 private slots:
     void press_button();
     void on_pushButton_ON_clicked();
-//    void digits_numbers();
 //    void on_action_2_triggered();
     void on_pushButton_eq_clicked();
 //    void on_pushButton_t_clicked();
@@ -43,7 +46,8 @@ private slots:
     void on_pushButton_log_clicked();
     void on_pushButton_ln_clicked();
     void on_pushButton_scale_clicked();
-    void on_pushButton_AC_clicked();
-    void on_pushButton_OFF_2_toggled(bool checked);
+    void on_pushButton_BackSpace_clicked();
+
+    void on_pushButtonCredit_clicked();
 };
 #endif // SPARRVIO_H

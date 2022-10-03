@@ -21,6 +21,11 @@ set(PROJECT_SOURCES
         sparrvio.cpp
         sparrvio.h
         sparrvio.ui
+
+        creditcalc.h
+        creditcalc.cpp
+        creditcalc.ui
+
         src/s21_SmartCalc.h
         src/calc.c
         src/parser.c

@@ -2,16 +2,14 @@
 #include "./ui_sparrvio.h"
 #include "src/s21_SmartCalc.h"
 
-double num_first;
 
-sparrvio::sparrvio(QWidget *parent)
+//double num_first;
 
-    : QMainWindow(parent)
-
-    , ui(new Ui::sparrvio)
+sparrvio::sparrvio(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::sparrvio)
 
 {
-
     ui->setupUi(this);
     connect(ui->pushButton_t,SIGNAL(clicked()),this,SLOT(press_button()));
     connect(ui->pushButton_brL,SIGNAL(clicked()),this,SLOT(press_button()));
@@ -40,11 +38,17 @@ sparrvio::~sparrvio()
 
 {
     delete ui;
+
 }
+
 
 void sparrvio::press_button()
 
 {
+    if(flag != 0){
+        ui->result->clear();
+        flag = 0;
+    }
     QPushButton *button = (QPushButton *) sender();
     if (ui->result->text().endsWith("0") && ui->result->text().size() == 1) {
         ui->result->setText(button->text());
@@ -58,18 +62,18 @@ void sparrvio::press_button()
 void sparrvio::on_pushButton_ON_clicked()
 
 {
-//    ui->pushButton_t->setChecked(false);
-//    ui->pushButton_div->setChecked(false);
-//    ui->pushButton_mult->setChecked(false);
-//    ui->pushButton_minus->setChecked(false);
-//    ui->pushButton_plus->setChecked(false);
+    ui->pushButton_t->setChecked(false);
+    ui->pushButton_div->setChecked(false);
+    ui->pushButton_mult->setChecked(false);
+    ui->pushButton_minus->setChecked(false);
+    ui->pushButton_plus->setChecked(false);
     ui->result->setText("0");
-
 }
 
 
 void sparrvio::on_pushButton_eq_clicked()
 {
+    flag = 1;
     QString input = ui->result->text();
     std::string str_pp = input.toStdString();
     char* cstr = new char[str_pp.length() + 1];
@@ -89,7 +93,8 @@ void sparrvio::on_pushButton_eq_clicked()
         ui->result->setText(num_to_str);
         delete [] cstr;
     } else {
-        ui->result->setText("ERROR");
+        ui->result->clear();
+        ui->result->setText("Incorrect Input");
     }
 
 
@@ -107,6 +112,10 @@ void sparrvio::on_pushButton_eq_clicked()
 
 void sparrvio::on_pushButton_sin_clicked()
 {
+    if(flag != 0){
+        ui->result->clear();
+        flag = 0;
+    }
     QPushButton *button = (QPushButton *) sender();
     if (ui->result->text().endsWith("0") && ui->result->text().size() == 1) {
         ui->result->setText("sin(");
@@ -121,6 +130,10 @@ void sparrvio::on_pushButton_sin_clicked()
 
 void sparrvio::on_pushButton_cos_clicked()
 {
+    if(flag != 0){
+        ui->result->clear();
+        flag = 0;
+    }
     QPushButton *button = (QPushButton *) sender();
     if (ui->result->text().endsWith("0") && ui->result->text().size() == 1) {
         ui->result->setText("cos(");
@@ -134,6 +147,11 @@ void sparrvio::on_pushButton_cos_clicked()
 
 void sparrvio::on_pushButton_tan_clicked()
 {
+    if(flag != 0){
+        ui->result->clear();
+        flag = 0;
+    }
+
     QPushButton *button = (QPushButton *) sender();
     if (ui->result->text().endsWith("0") && ui->result->text().size() == 1) {
         ui->result->setText("tan(");
@@ -147,6 +165,11 @@ void sparrvio::on_pushButton_tan_clicked()
 
 void sparrvio::on_pushButton_sqrt_clicked()
 {
+    if(flag != 0){
+        ui->result->clear();
+        flag = 0;
+    }
+
     QPushButton *button = (QPushButton *) sender();
     if (ui->result->text().endsWith("0") && ui->result->text().size() == 1) {
         ui->result->setText("sqrt(");
@@ -158,14 +181,13 @@ void sparrvio::on_pushButton_sqrt_clicked()
 }
 
 
-void sparrvio::on_pushButton_OFF_clicked()
-{
-    QApplication::quit();
-}
-
-
 void sparrvio::on_pushButton_asin_clicked()
 {
+    if(flag != 0){
+        ui->result->clear();
+        flag = 0;
+    }
+
     QPushButton *button = (QPushButton *) sender();
     if (ui->result->text().endsWith("0") && ui->result->text().size() == 1) {
         ui->result->setText("asin(");
@@ -179,6 +201,11 @@ void sparrvio::on_pushButton_asin_clicked()
 
 void sparrvio::on_pushButton_acos_clicked()
 {
+    if(flag != 0){
+        ui->result->clear();
+        flag = 0;
+    }
+
     QPushButton *button = (QPushButton *) sender();
     if (ui->result->text().endsWith("0") && ui->result->text().size() == 1) {
         ui->result->setText("acos(");
@@ -192,6 +219,11 @@ void sparrvio::on_pushButton_acos_clicked()
 
 void sparrvio::on_pushButton_atan_clicked()
 {
+    if(flag != 0){
+        ui->result->clear();
+        flag = 0;
+    }
+
     QPushButton *button = (QPushButton *) sender();
     if (ui->result->text().endsWith("0") && ui->result->text().size() == 1) {
         ui->result->setText("atan(");
@@ -205,6 +237,11 @@ void sparrvio::on_pushButton_atan_clicked()
 
 void sparrvio::on_pushButton_mod_clicked()
 {
+    if(flag != 0){
+        ui->result->clear();
+        flag = 0;
+    }
+
     QPushButton *button = (QPushButton *) sender();
     if (ui->result->text().endsWith("0") && ui->result->text().size() == 1) {
         ui->result->setText("%");
@@ -218,6 +255,11 @@ void sparrvio::on_pushButton_mod_clicked()
 
 void sparrvio::on_pushButton_log_clicked()
 {
+    if(flag != 0){
+        ui->result->clear();
+        flag = 0;
+    }
+
     QPushButton *button = (QPushButton *) sender();
     if (ui->result->text().endsWith("0") && ui->result->text().size() == 1) {
         ui->result->setText("log(");
@@ -231,6 +273,11 @@ void sparrvio::on_pushButton_log_clicked()
 
 void sparrvio::on_pushButton_ln_clicked()
 {
+    if(flag != 0){
+        ui->result->clear();
+        flag = 0;
+    }
+
     QPushButton *button = (QPushButton *) sender();
     if (ui->result->text().endsWith("0") && ui->result->text().size() == 1) {
         ui->result->setText("l_n(");
@@ -244,6 +291,11 @@ void sparrvio::on_pushButton_ln_clicked()
 
 void sparrvio::on_pushButton_scale_clicked()
 {
+    if(flag != 0){
+        ui->result->clear();
+        flag = 0;
+    }
+
     QPushButton *button = (QPushButton *) sender();
     if (ui->result->text().endsWith("0") && ui->result->text().size() == 1) {
         ui->result->setText("^");
@@ -255,13 +307,25 @@ void sparrvio::on_pushButton_scale_clicked()
 }
 
 
-void sparrvio::on_pushButton_AC_clicked()
+void sparrvio::on_pushButton_OFF_clicked()
 {
-    ui->result->setText("0");
+    QApplication::quit();
 }
 
-void sparrvio::on_pushButton_OFF_2_toggled(bool checked)
+void sparrvio::on_pushButton_BackSpace_clicked()
 {
-    ui->result->setText("0");
+    QString text = ui->result->text();
+    text.chop(1);
+
+    if(text.isEmpty()){
+        text = "0";
+    }
+    ui->result->setText(text);
+}
+
+
+void sparrvio::on_pushButtonCredit_clicked()
+{
+    win_credit.show();
 }
 

@@ -1,6 +1,6 @@
 #include "sparrvio.h"
 #include "src/s21_SmartCalc.h"
-
+#include <QtWidgets/QWidget>
 #include <QApplication>
 #include <QLocale>
 #include <QTranslator>
