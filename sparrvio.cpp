@@ -101,15 +101,6 @@ void sparrvio::on_pushButton_eq_clicked()
 }
 
 
-//void sparrvio::on_pushButton_t_clicked()
-//{
-//        if(!(ui->result->text().contains('.')))
-
-//        ui->result->setText(ui->result->text() + ".");
-
-//}
-
-
 void sparrvio::on_pushButton_sin_clicked()
 {
     if(flag != 0){

@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>768</width>
+    <width>816</width>
     <height>445</height>
    </rect>
   </property>
@@ -16,7 +16,7 @@
   <widget class="QWidget" name="gridLayoutWidget">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>60</x>
      <y>10</y>
      <width>491</width>
      <height>241</height>
@@ -29,30 +29,26 @@
     </size>
    </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="6" column="1">
-     <widget class="QLineEdit" name="percent">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
       <property name="minimumSize">
        <size>
-        <width>320</width>
-        <height>73</height>
+        <width>130</width>
+        <height>22</height>
        </size>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-radius: 10px;
-font: 24pt &quot;.AppleSystemUIFont&quot;;
-border: 2px solid gray;</string>
+       <string>font: 18pt &quot;.AppleSystemUIFont&quot;;
+font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
       </property>
       <property name="text">
-       <string/>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       <string> Сумма кредита</string>
       </property>
      </widget>
     </item>
@@ -79,33 +75,6 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
       </property>
      </widget>
     </item>
-    <item row="4" column="1">
-     <widget class="QLineEdit" name="deadline">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>320</width>
-        <height>73</height>
-       </size>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">border-radius: 10px;
-font: 24pt &quot;.AppleSystemUIFont&quot;;
-border: 2px solid gray;</string>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-      <property name="alignment">
-       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-      </property>
-     </widget>
-    </item>
     <item row="4" column="0">
      <widget class="QLabel" name="label_2">
       <property name="sizePolicy">
@@ -129,31 +98,62 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
       </property>
      </widget>
     </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="label">
+    <item row="0" column="1">
+     <widget class="QLabel" name="disp_sum">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
       <property name="minimumSize">
        <size>
-        <width>130</width>
-        <height>22</height>
+        <width>320</width>
+        <height>73</height>
        </size>
       </property>
       <property name="styleSheet">
-       <string>font: 18pt &quot;.AppleSystemUIFont&quot;;
-font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+       <string notr="true">border-radius: 10px;
+font: 24pt &quot;.AppleSystemUIFont&quot;;
+border: 2px solid gray;</string>
       </property>
       <property name="text">
-       <string> Сумма кредита</string>
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
       </property>
      </widget>
     </item>
-    <item row="0" column="1">
-     <widget class="QLabel" name="sum_credit">
+    <item row="4" column="1">
+     <widget class="QLabel" name="disp_deadline">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>320</width>
+        <height>73</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 10px;
+font: 24pt &quot;.AppleSystemUIFont&quot;;
+border: 2px solid gray;</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLabel" name="disp_percent">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
@@ -184,7 +184,7 @@ border: 2px solid gray;</string>
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>60</x>
      <y>260</y>
      <width>241</width>
      <height>22</height>
@@ -210,10 +210,10 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
     <string>Тип ежемесячых платежей</string>
    </property>
   </widget>
-  <widget class="QRadioButton" name="radioButton">
+  <widget class="QRadioButton" name="radio_ann_pay">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>60</x>
      <y>290</y>
      <width>241</width>
      <height>20</height>
@@ -233,10 +233,10 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
     <string>Аннуитетные</string>
    </property>
   </widget>
-  <widget class="QRadioButton" name="radioButton_2">
+  <widget class="QRadioButton" name="radio_diff_pay">
    <property name="geometry">
     <rect>
-     <x>260</x>
+     <x>310</x>
      <y>290</y>
      <width>241</width>
      <height>20</height>
@@ -352,7 +352,7 @@ QPushButton:pressed {
   <widget class="QWidget" name="gridLayoutWidget_2">
    <property name="geometry">
     <rect>
-     <x>510</x>
+     <x>560</x>
      <y>10</y>
      <width>241</width>
      <height>321</height>
@@ -833,7 +833,58 @@ QPushButton:pressed {
     </item>
    </layout>
   </widget>
+  <widget class="QRadioButton" name="radio_sum">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>16</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QRadioButton" name="radio_deadline">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>120</y>
+     <width>16</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
+  <widget class="QRadioButton" name="radio_percent">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>210</y>
+     <width>16</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <attribute name="buttonGroup">
+    <string notr="true">buttonGroup</string>
+   </attribute>
+  </widget>
  </widget>
  <resources/>
  <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
 </ui>

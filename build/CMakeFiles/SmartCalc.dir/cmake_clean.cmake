@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "SmartCalc_autogen"
   "CMakeFiles/SmartCalc.dir/SmartCalc_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/SmartCalc.dir/SmartCalc_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/SmartCalc.dir/creditcalc.cpp.o"
+  "CMakeFiles/SmartCalc.dir/creditcalc.cpp.o.d"
   "CMakeFiles/SmartCalc.dir/main.cpp.o"
   "CMakeFiles/SmartCalc.dir/main.cpp.o.d"
   "CMakeFiles/SmartCalc.dir/sparrvio.cpp.o"
