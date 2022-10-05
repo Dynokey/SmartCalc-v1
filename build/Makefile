@@ -167,6 +167,30 @@ SmartCalc_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/SmartCalc_autogen/mocs_compilation.cpp.s
 .PHONY : SmartCalc_autogen/mocs_compilation.cpp.s
 
+creditcalc.o: creditcalc.cpp.o
+.PHONY : creditcalc.o
+
+# target to build an object file
+creditcalc.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/creditcalc.cpp.o
+.PHONY : creditcalc.cpp.o
+
+creditcalc.i: creditcalc.cpp.i
+.PHONY : creditcalc.i
+
+# target to preprocess a source file
+creditcalc.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/creditcalc.cpp.i
+.PHONY : creditcalc.cpp.i
+
+creditcalc.s: creditcalc.cpp.s
+.PHONY : creditcalc.s
+
+# target to generate assembly for a file
+creditcalc.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/creditcalc.cpp.s
+.PHONY : creditcalc.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -348,6 +372,9 @@ help:
 	@echo "... SmartCalc_autogen/mocs_compilation.o"
 	@echo "... SmartCalc_autogen/mocs_compilation.i"
 	@echo "... SmartCalc_autogen/mocs_compilation.s"
+	@echo "... creditcalc.o"
+	@echo "... creditcalc.i"
+	@echo "... creditcalc.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

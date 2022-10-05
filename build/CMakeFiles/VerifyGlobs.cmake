@@ -7,9 +7,13 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Users/sparrvio/SmartCalc/*.c
 set(OLD_GLOB
   "/Users/sparrvio/SmartCalc/build/CMakeFiles/3.23.0/CompilerIdC/CMakeCCompilerId.c"
   "/Users/sparrvio/SmartCalc/src/calc.c"
+  "/Users/sparrvio/SmartCalc/src/credit_calc_ann.c"
+  "/Users/sparrvio/SmartCalc/src/credit_calc_diff.c"
   "/Users/sparrvio/SmartCalc/src/my_main.c"
+  "/Users/sparrvio/SmartCalc/src/new_main.c"
   "/Users/sparrvio/SmartCalc/src/notation.c"
   "/Users/sparrvio/SmartCalc/src/parser.c"
+  "/Users/sparrvio/SmartCalc/src/second_func.c"
   "/Users/sparrvio/SmartCalc/src/validator.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -48,8 +52,8 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Users/sparrvio/SmartCalc/*.cpp")
 set(OLD_GLOB
   "/Users/sparrvio/SmartCalc/build/CMakeFiles/3.23.0/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+  "/Users/sparrvio/SmartCalc/creditcalc.cpp"
   "/Users/sparrvio/SmartCalc/main.cpp"
-  "/Users/sparrvio/SmartCalc/old_sparrvio.cpp"
   "/Users/sparrvio/SmartCalc/sparrvio.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -69,6 +73,7 @@ endif()
 # _directory_contents at /usr/local/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:79 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Users/sparrvio/SmartCalc/*.h")
 set(OLD_GLOB
+  "/Users/sparrvio/SmartCalc/creditcalc.h"
   "/Users/sparrvio/SmartCalc/sparrvio.h"
   "/Users/sparrvio/SmartCalc/src/s21_SmartCalc.h"
   )
@@ -170,7 +175,7 @@ endif()
 # _directory_contents at /usr/local/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:79 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Users/sparrvio/SmartCalc/*.ui")
 set(OLD_GLOB
-  "/Users/sparrvio/SmartCalc/form.ui"
+  "/Users/sparrvio/SmartCalc/creditcalc.ui"
   "/Users/sparrvio/SmartCalc/sparrvio.ui"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
