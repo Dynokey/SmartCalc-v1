@@ -17,6 +17,9 @@ public:
     bool sum = false;
     bool deadline = false;
     bool percent = false;
+    bool ann = false;
+    bool diff = false;
+    bool flag = false;
 
 private slots:
     void on_pushButton_clicked();
@@ -32,6 +35,15 @@ private slots:
     void on_pushButton_BackSpace_clicked();
 
     void on_pushButton_t_clicked();
+
+    void on_pushButton_Calc_clicked();
+
+
+    void on_radio_ann_pay_clicked(bool checked);
+
+    void on_radio_diff_pay_clicked(bool checked);
+
+    void on_pushButton_Clear_clicked();
 
 private:
     Ui::CreditCalc *ui;

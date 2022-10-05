@@ -26,6 +26,16 @@ CreditCalc::~CreditCalc()
 }
 
 void CreditCalc::digits_number(){
+    if(flag == true){
+//        ui->disp_sum->clear();
+//        ui->disp_deadline->clear();
+//        ui->disp_percent->clear();
+        ui->gen_sum->clear();
+        ui->over_pay->clear();
+        ui->pay_mounth->clear();
+        flag = false;
+    }
+
     QPushButton *button = (QPushButton *) sender();
 
     double all_numbers;
@@ -45,6 +55,77 @@ void CreditCalc::digits_number(){
     }
 }
 
+
+void CreditCalc::on_pushButton_Calc_clicked()
+{
+    flag = true;
+
+    QString input_sum = ui->disp_sum->text();
+    std::string str_sum = input_sum.toStdString();
+    char* cstr_sum = new char[str_sum.length() + 1];
+    strcpy(cstr_sum, str_sum.c_str());
+
+
+    QString input_deadline = ui->disp_deadline->text();
+    std::string str_deadline = input_deadline.toStdString();
+    char* cstr_deadline = new char[str_deadline.length() + 1];
+    strcpy(cstr_deadline, str_deadline.c_str());
+
+    QString input_percent = ui->disp_percent->text();
+    std::string str_percent = input_percent.toStdString();
+    char* cstr_percent = new char[str_percent.length() + 1];
+    strcpy(cstr_percent, str_percent.c_str());
+
+    double gen_sum = 0.0;
+    double over_pay = 0.0;
+    double pay_min = 0.0;
+    double pay_max = 0.0;
+
+    if(diff == true) {
+        credit_calc_diff(cstr_sum, cstr_deadline, cstr_percent, &gen_sum, &over_pay, &pay_min, &pay_max);
+
+        QString num_gen_sum;
+        num_gen_sum = QString::number(gen_sum, 'g', 12);
+
+        QString num_over_pay;
+        num_over_pay = QString::number(over_pay, 'g', 12);
+
+        QString num_pay_min;
+        num_pay_min = QString::number(pay_min, 'g', 12);
+
+        QString num_pay_max;
+        num_pay_max = QString::number(pay_max, 'g', 12);
+
+
+        ui->gen_sum->setText(num_gen_sum);
+        ui->over_pay->setText(num_over_pay);
+        ui->pay_mounth->setText(num_pay_max);
+        ui->pay_mounth->setText(ui->pay_mounth->text() + "... ..." + num_pay_min);
+
+    } else if(ann == true){
+
+        credit_calc_ann(cstr_sum, cstr_deadline, cstr_percent, &gen_sum, &over_pay, &pay_min);
+
+        QString num_gen_sum;
+        num_gen_sum = QString::number(gen_sum, 'g', 12);
+
+        QString num_over_pay;
+        num_over_pay = QString::number(over_pay, 'g', 12);
+
+        QString num_pay_min;
+        num_pay_min = QString::number(pay_min, 'g', 12);
+
+        ui->gen_sum->setText(num_gen_sum);
+        ui->over_pay->setText(num_over_pay);
+        ui->pay_mounth->setText(num_pay_min);
+    }
+
+        delete [] cstr_sum;
+        delete [] cstr_deadline;
+        delete [] cstr_percent;
+
+}
+
 void CreditCalc::on_pushButton_clicked()
 {
     CreditCalc one;
@@ -55,7 +136,6 @@ void CreditCalc::on_pushButton_clicked()
 void CreditCalc::on_pushButton_Exit_clicked()
 {
         QApplication::quit();
-
 }
 
 
@@ -86,6 +166,7 @@ void CreditCalc::on_radio_percent_clicked(bool checked)
 
 void CreditCalc::on_pushButton_BackSpace_clicked()
 {
+
     if(sum == true){
 
         QString text = ui->disp_sum->text();
@@ -140,5 +221,34 @@ void CreditCalc::on_pushButton_t_clicked()
                  ui->disp_percent->setText(ui->disp_percent->text() + ".");
 
     }
+}
+
+
+void CreditCalc::on_radio_ann_pay_clicked(bool checked)
+{
+    ann = true;
+}
+
+
+void CreditCalc::on_radio_diff_pay_clicked(bool checked)
+{
+    diff = true;
+}
+
+
+void CreditCalc::on_pushButton_Clear_clicked()
+{
+    ui->disp_sum->clear();
+    ui->disp_deadline->clear();
+    ui->disp_percent->clear();
+    ui->gen_sum->clear();
+    ui->over_pay->clear();
+    ui->pay_mounth->clear();
+    bool sum = false;
+    bool deadline = false;
+    bool percent = false;
+    bool ann = false;
+    bool diff = false;
+    bool flag = false;
 }
 

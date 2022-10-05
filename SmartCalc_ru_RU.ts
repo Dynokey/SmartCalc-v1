@@ -4,132 +4,148 @@
 <context>
     <name>CreditCalc</name>
     <message>
-        <location filename="creditcalc.ui" line="14"/>
+        <location filename="creditcalc.ui" line="32"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="47"/>
-        <location filename="creditcalc.ui" line="70"/>
-        <location filename="creditcalc.ui" line="93"/>
-        <location filename="creditcalc.ui" line="206"/>
+        <location filename="creditcalc.ui" line="71"/>
+        <location filename="creditcalc.ui" line="94"/>
+        <location filename="creditcalc.ui" line="117"/>
+        <location filename="creditcalc.ui" line="230"/>
+        <location filename="creditcalc.ui" line="943"/>
+        <location filename="creditcalc.ui" line="966"/>
+        <location filename="creditcalc.ui" line="1070"/>
         <source>font: 18pt &quot;.AppleSystemUIFont&quot;;
 font: 18pt &quot;.AppleSystemUIFont&quot;;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="74"/>
+        <location filename="creditcalc.ui" line="98"/>
         <source> Процентная ставка</source>
         <oldsource>Процентная ставка</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="97"/>
+        <location filename="creditcalc.ui" line="121"/>
         <source> Срок кредита</source>
         <oldsource>Срок кредита</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="51"/>
+        <location filename="creditcalc.ui" line="75"/>
         <source> Сумма кредита</source>
         <oldsource>Сумма кредита</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="210"/>
+        <location filename="creditcalc.ui" line="234"/>
         <source>Тип ежемесячых платежей</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="256"/>
+        <location filename="creditcalc.ui" line="292"/>
         <source>Дифференцированные</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="283"/>
-        <source>RESULT</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="creditcalc.ui" line="317"/>
+        <location filename="creditcalc.ui" line="329"/>
         <source>CALC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="349"/>
-        <source>EXIT</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="creditcalc.ui" line="121"/>
-        <location filename="creditcalc.ui" line="148"/>
-        <location filename="creditcalc.ui" line="175"/>
-        <location filename="creditcalc.ui" line="401"/>
+        <location filename="creditcalc.ui" line="145"/>
+        <location filename="creditcalc.ui" line="172"/>
+        <location filename="creditcalc.ui" line="199"/>
+        <location filename="creditcalc.ui" line="387"/>
+        <location filename="creditcalc.ui" line="994"/>
+        <location filename="creditcalc.ui" line="1021"/>
+        <location filename="creditcalc.ui" line="1048"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="440"/>
+        <location filename="creditcalc.ui" line="426"/>
         <source>1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="478"/>
+        <location filename="creditcalc.ui" line="464"/>
         <source>.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="504"/>
+        <location filename="creditcalc.ui" line="490"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Возведение в степень&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="520"/>
+        <location filename="creditcalc.ui" line="506"/>
         <source>←</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="558"/>
+        <location filename="creditcalc.ui" line="544"/>
         <source>3</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="602"/>
+        <location filename="creditcalc.ui" line="588"/>
         <source>2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="640"/>
+        <location filename="creditcalc.ui" line="626"/>
         <source>4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="678"/>
+        <location filename="creditcalc.ui" line="664"/>
         <source>5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="716"/>
+        <location filename="creditcalc.ui" line="702"/>
         <source>6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="754"/>
+        <location filename="creditcalc.ui" line="740"/>
         <source>7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="792"/>
+        <location filename="creditcalc.ui" line="778"/>
         <source>8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="830"/>
+        <location filename="creditcalc.ui" line="816"/>
         <source>9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="creditcalc.ui" line="233"/>
+        <location filename="creditcalc.ui" line="947"/>
+        <source>Долг + проценты</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="creditcalc.ui" line="970"/>
+        <source>Начисленные проценты</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="creditcalc.ui" line="1074"/>
+        <source>Ежемесячный платеж</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="creditcalc.ui" line="1115"/>
+        <source>CLEAR</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="creditcalc.ui" line="263"/>
         <source>Аннуитетные</source>
         <translation type="unfinished"></translation>
     </message>

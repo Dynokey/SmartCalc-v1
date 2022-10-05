@@ -7,8 +7,26 @@
     <x>0</x>
     <y>0</y>
     <width>816</width>
-    <height>445</height>
+    <height>618</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>816</width>
+    <height>618</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>816</width>
+    <height>618</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
@@ -22,6 +40,12 @@
      <height>241</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
    <property name="minimumSize">
     <size>
      <width>491</width>
@@ -32,7 +56,7 @@
     <item row="0" column="0">
      <widget class="QLabel" name="label">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -55,7 +79,7 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
     <item row="6" column="0">
      <widget class="QLabel" name="label_3">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -78,7 +102,7 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
     <item row="4" column="0">
      <widget class="QLabel" name="label_2">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -101,7 +125,7 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
     <item row="0" column="1">
      <widget class="QLabel" name="disp_sum">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -128,7 +152,7 @@ border: 2px solid gray;</string>
     <item row="4" column="1">
      <widget class="QLabel" name="disp_deadline">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -155,7 +179,7 @@ border: 2px solid gray;</string>
     <item row="6" column="1">
      <widget class="QLabel" name="disp_percent">
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -191,7 +215,7 @@ border: 2px solid gray;</string>
     </rect>
    </property>
    <property name="sizePolicy">
-    <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
      <horstretch>0</horstretch>
      <verstretch>0</verstretch>
     </sizepolicy>
@@ -219,6 +243,12 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
      <height>20</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
    <property name="minimumSize">
     <size>
      <width>241</width>
@@ -242,6 +272,12 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
      <height>20</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
    <property name="minimumSize">
     <size>
      <width>241</width>
@@ -256,56 +292,32 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
     <string>Дифференцированные</string>
    </property>
   </widget>
-  <widget class="QLabel" name="result">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>360</y>
-     <width>501</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>501</width>
-     <height>71</height>
-    </size>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">border-radius: 10px;
-font: 24pt &quot;.AppleSystemUIFont&quot;;
-border: 2px solid gray;
-
-background-color:rgb(216, 214, 218);
-</string>
-   </property>
-   <property name="text">
-    <string>RESULT</string>
-   </property>
-   <property name="alignment">
-    <set>Qt::AlignCenter</set>
-   </property>
-  </widget>
   <widget class="QPushButton" name="pushButton_Calc">
    <property name="geometry">
     <rect>
-     <x>510</x>
-     <y>360</y>
-     <width>111</width>
-     <height>71</height>
+     <x>630</x>
+     <y>490</y>
+     <width>121</width>
+     <height>121</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
    </property>
    <property name="minimumSize">
     <size>
-     <width>111</width>
-     <height>71</height>
+     <width>100</width>
+     <height>100</height>
     </size>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton {
-	border-radius: 10px;
+	border-radius: 60px;
 	font: 24pt &quot;.AppleSystemUIFont&quot;;
-	border: 2px solid gray;
+	border: 6px solid green;
 }
 
 QPushButton:pressed {
@@ -317,38 +329,6 @@ QPushButton:pressed {
     <string>CALC</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_Exit">
-   <property name="geometry">
-    <rect>
-     <x>640</x>
-     <y>360</y>
-     <width>111</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>111</width>
-     <height>71</height>
-    </size>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton {
-	border-radius: 10px;
-	font: 24pt &quot;.AppleSystemUIFont&quot;;
-	border: 2px solid gray;
-}
-
-QPushButton:pressed {
-	background-color: rgb(255, 40, 21);
-	color: rgb(255, 255, 255);
-}
-</string>
-   </property>
-   <property name="text">
-    <string>EXIT</string>
-   </property>
-  </widget>
   <widget class="QWidget" name="gridLayoutWidget_2">
    <property name="geometry">
     <rect>
@@ -357,6 +337,12 @@ QPushButton:pressed {
      <width>241</width>
      <height>321</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
    </property>
    <property name="minimumSize">
     <size>
@@ -842,6 +828,18 @@ QPushButton:pressed {
      <height>20</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>16</width>
+     <height>20</height>
+    </size>
+   </property>
    <property name="text">
     <string/>
    </property>
@@ -857,6 +855,18 @@ QPushButton:pressed {
      <width>16</width>
      <height>20</height>
     </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>16</width>
+     <height>20</height>
+    </size>
    </property>
    <property name="text">
     <string/>
@@ -874,12 +884,236 @@ QPushButton:pressed {
      <height>20</height>
     </rect>
    </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>16</width>
+     <height>20</height>
+    </size>
+   </property>
    <property name="text">
     <string/>
    </property>
    <attribute name="buttonGroup">
     <string notr="true">buttonGroup</string>
    </attribute>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>340</y>
+     <width>527</width>
+     <height>273</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>527</width>
+     <height>273</height>
+    </size>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>159</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>font: 18pt &quot;.AppleSystemUIFont&quot;;
+font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Долг + проценты</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>195</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>font: 18pt &quot;.AppleSystemUIFont&quot;;
+font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Начисленные проценты</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="over_pay">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>320</width>
+        <height>83</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 10px;
+font: 24pt &quot;.AppleSystemUIFont&quot;;
+border: 2px solid gray;</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLabel" name="gen_sum">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>320</width>
+        <height>84</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 10px;
+font: 24pt &quot;.AppleSystemUIFont&quot;;
+border: 2px solid gray;</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="pay_mounth">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>320</width>
+        <height>84</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 10px;
+font: 24pt &quot;.AppleSystemUIFont&quot;;
+border: 2px solid gray;</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>177</width>
+        <height>22</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string>font: 18pt &quot;.AppleSystemUIFont&quot;;
+font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Ежемесячный платеж</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="pushButton_Clear">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>360</y>
+     <width>121</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>100</width>
+     <height>100</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+	border-radius: 60px;
+	font: 24pt &quot;.AppleSystemUIFont&quot;;
+	border: 6px solid rgb(255, 40, 21);
+}
+
+QPushButton:pressed {
+	background-color: rgb(255, 40, 21);
+	color: rgb(255, 255, 255);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>CLEAR</string>
+   </property>
   </widget>
  </widget>
  <resources/>

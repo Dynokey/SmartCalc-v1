@@ -32,6 +32,8 @@ set(PROJECT_SOURCES
         src/notation.c
         src/validator.c
         src/my_main.c
+        src/credit_calc_ann.c
+        src/credit_calc_diff.c
         ${TS_FILES}
 )
 

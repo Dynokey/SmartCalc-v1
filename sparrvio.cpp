@@ -3,11 +3,10 @@
 #include "src/s21_SmartCalc.h"
 
 
-//double num_first;
-
 sparrvio::sparrvio(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::sparrvio)
+
 
 {
     ui->setupUi(this);
@@ -96,7 +95,6 @@ void sparrvio::on_pushButton_eq_clicked()
         ui->result->clear();
         ui->result->setText("Incorrect Input");
     }
-
 
 }
 
@@ -317,6 +315,9 @@ void sparrvio::on_pushButton_BackSpace_clicked()
 
 void sparrvio::on_pushButtonCredit_clicked()
 {
-    win_credit.show();
+//    win_credit.show();
+    CreditCalc window;
+    window.setModal(true);
+    window.exec();
 }
 

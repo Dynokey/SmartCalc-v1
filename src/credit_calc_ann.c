@@ -1,17 +1,20 @@
 #include "s21_SmartCalc.h"
 
-double credit_calc_ann(char* str, int mounth, double percent) {
-  double sum = atof(str);
+int credit_calc_ann(char* str_sum, char* str_mounth, char* str_percen, double* str_gen_pay,
+                        double* str_over_pay, double* str_pay_mounth) {
+  double sum = atof(str_sum);
+  int mounth = atoi(str_mounth);
+  double percent = atof(str_percen);
+  
   double pay_mounth = round(every_month(sum, percent, mounth) * 100) / 100;
   double general_pay = round((pay_mounth * mounth) * 100) / 100;
   double over_pay = round((general_pay - sum) * 100) / 100;
 
-  printf("%f\n", sum);
-  printf("%f\n", pay_mounth);
-  printf("%f\n", over_pay);
-  printf("%f\n", general_pay);
+  *str_gen_pay = general_pay;
+  *str_over_pay = over_pay;
+  *str_pay_mounth = pay_mounth;
 
-  return sum;
+  return 0;
 }
 
 double every_month(double sum, double percent, int mounth) {
