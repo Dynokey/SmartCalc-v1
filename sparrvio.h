@@ -31,7 +31,6 @@ private:
 private slots:
     void press_button();
     void on_pushButton_ON_clicked();
-//    void on_action_2_triggered();
     void on_pushButton_eq_clicked();
 //    void on_pushButton_t_clicked();
     void on_pushButton_sin_clicked();
