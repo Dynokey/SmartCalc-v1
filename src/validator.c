@@ -6,7 +6,7 @@ int validator(char* str) {
   char sign[16] = {'+', '-', '*', '/', '^', 'm', '.'};
   char sign_m[8] = {'*', '/', '^', 'm', ')'};
   char num[16] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', ')'};
-  char symbol_for_back [24] = {'+', '-', '*', '/', '^', '+', '-', '*', '/', '^', 'm'};
+  char symbol_for_back [24] = {'+', '-', '*', '/', '^', '+', '-', '*', '/', '^', 'm', '('};
   int ret = 0;
   int len = strlen(str);
   int count_bracket = 0;

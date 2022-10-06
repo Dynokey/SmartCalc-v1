@@ -86,7 +86,6 @@ include CMakeFiles/SmartCalc.dir/flags.make
 ../SmartCalc_ru_RU.ts: ../src/notation.c
 ../SmartCalc_ru_RU.ts: ../src/parser.c
 ../SmartCalc_ru_RU.ts: ../src/s21_SmartCalc.h
-../SmartCalc_ru_RU.ts: ../src/second_func.c
 ../SmartCalc_ru_RU.ts: ../src/validator.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/sparrvio/SmartCalc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../SmartCalc_ru_RU.ts"
 	/usr/local/bin/lupdate @/Users/sparrvio/SmartCalc/build/CMakeFiles/SmartCalc_ru_RU.ts_lst_file -ts /Users/sparrvio/SmartCalc/SmartCalc_ru_RU.ts
@@ -217,6 +216,34 @@ CMakeFiles/SmartCalc.dir/src/my_main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SmartCalc.dir/src/my_main.c.s"
 	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sparrvio/SmartCalc/src/my_main.c -o CMakeFiles/SmartCalc.dir/src/my_main.c.s
 
+CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.o: CMakeFiles/SmartCalc.dir/flags.make
+CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.o: ../src/credit_calc_ann.c
+CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.o: CMakeFiles/SmartCalc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sparrvio/SmartCalc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.o -MF CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.o.d -o CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.o -c /Users/sparrvio/SmartCalc/src/credit_calc_ann.c
+
+CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sparrvio/SmartCalc/src/credit_calc_ann.c > CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.i
+
+CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sparrvio/SmartCalc/src/credit_calc_ann.c -o CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.s
+
+CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.o: CMakeFiles/SmartCalc.dir/flags.make
+CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.o: ../src/credit_calc_diff.c
+CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.o: CMakeFiles/SmartCalc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sparrvio/SmartCalc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.o"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.o -MF CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.o.d -o CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.o -c /Users/sparrvio/SmartCalc/src/credit_calc_diff.c
+
+CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.i"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/sparrvio/SmartCalc/src/credit_calc_diff.c > CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.i
+
+CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.s"
+	/usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/sparrvio/SmartCalc/src/credit_calc_diff.c -o CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.s
+
 # Object files for target SmartCalc
 SmartCalc_OBJECTS = \
 "CMakeFiles/SmartCalc.dir/SmartCalc_autogen/mocs_compilation.cpp.o" \
@@ -227,7 +254,9 @@ SmartCalc_OBJECTS = \
 "CMakeFiles/SmartCalc.dir/src/parser.c.o" \
 "CMakeFiles/SmartCalc.dir/src/notation.c.o" \
 "CMakeFiles/SmartCalc.dir/src/validator.c.o" \
-"CMakeFiles/SmartCalc.dir/src/my_main.c.o"
+"CMakeFiles/SmartCalc.dir/src/my_main.c.o" \
+"CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.o" \
+"CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.o"
 
 # External object files for target SmartCalc
 SmartCalc_EXTERNAL_OBJECTS =
@@ -241,12 +270,14 @@ SmartCalc.app/Contents/MacOS/SmartCalc: CMakeFiles/SmartCalc.dir/src/parser.c.o
 SmartCalc.app/Contents/MacOS/SmartCalc: CMakeFiles/SmartCalc.dir/src/notation.c.o
 SmartCalc.app/Contents/MacOS/SmartCalc: CMakeFiles/SmartCalc.dir/src/validator.c.o
 SmartCalc.app/Contents/MacOS/SmartCalc: CMakeFiles/SmartCalc.dir/src/my_main.c.o
+SmartCalc.app/Contents/MacOS/SmartCalc: CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.o
+SmartCalc.app/Contents/MacOS/SmartCalc: CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.o
 SmartCalc.app/Contents/MacOS/SmartCalc: CMakeFiles/SmartCalc.dir/build.make
 SmartCalc.app/Contents/MacOS/SmartCalc: /usr/local/lib/QtWidgets.framework/Versions/A/QtWidgets
 SmartCalc.app/Contents/MacOS/SmartCalc: /usr/local/lib/QtGui.framework/Versions/A/QtGui
 SmartCalc.app/Contents/MacOS/SmartCalc: /usr/local/lib/QtCore.framework/Versions/A/QtCore
 SmartCalc.app/Contents/MacOS/SmartCalc: CMakeFiles/SmartCalc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sparrvio/SmartCalc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable SmartCalc.app/Contents/MacOS/SmartCalc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sparrvio/SmartCalc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable SmartCalc.app/Contents/MacOS/SmartCalc"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SmartCalc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -13,7 +13,6 @@ set(OLD_GLOB
   "/Users/sparrvio/SmartCalc/src/new_main.c"
   "/Users/sparrvio/SmartCalc/src/notation.c"
   "/Users/sparrvio/SmartCalc/src/parser.c"
-  "/Users/sparrvio/SmartCalc/src/second_func.c"
   "/Users/sparrvio/SmartCalc/src/validator.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")

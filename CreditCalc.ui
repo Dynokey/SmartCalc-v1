@@ -317,7 +317,7 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
     <string notr="true">QPushButton {
 	border-radius: 60px;
 	font: 24pt &quot;.AppleSystemUIFont&quot;;
-	border: 6px solid green;
+	border: 4px solid green;
 }
 
 QPushButton:pressed {
@@ -1102,7 +1102,7 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</string>
     <string notr="true">QPushButton {
 	border-radius: 60px;
 	font: 24pt &quot;.AppleSystemUIFont&quot;;
-	border: 6px solid rgb(255, 40, 21);
+	border: 4px solid rgb(255, 40, 21);
 }
 
 QPushButton:pressed {

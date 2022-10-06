@@ -3,7 +3,7 @@
 int main() {
 char sum [SIZE] = {'1', '0', '0', '0'};
 char mounth [SIZE] = {'1', '2'};
-char percent [SIZE] = {'1', '0'};
+char percent [SIZE] = {'0'};
 double gen_pay = 0.0;
 double over_pay = 0.0;
 double pay_min = 0.0;

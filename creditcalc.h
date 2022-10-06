@@ -22,9 +22,8 @@ public:
     bool flag = false;
 
 private slots:
-    void on_pushButton_clicked();
+
     void digits_number();
-    void on_pushButton_Exit_clicked();
 
     void on_radio_sum_clicked(bool checked);
 
@@ -38,12 +37,13 @@ private slots:
 
     void on_pushButton_Calc_clicked();
 
-
     void on_radio_ann_pay_clicked(bool checked);
 
     void on_radio_diff_pay_clicked(bool checked);
 
     void on_pushButton_Clear_clicked();
+
+    void on_pushButton_0_clicked();
 
 private:
     Ui::CreditCalc *ui;

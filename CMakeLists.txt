@@ -34,6 +34,7 @@ set(PROJECT_SOURCES
         src/my_main.c
         src/credit_calc_ann.c
         src/credit_calc_diff.c
+
         ${TS_FILES}
 )
 

@@ -385,6 +385,8 @@
 		[ "/Users/sparrvio/SmartCalc/main.cpp", "MU", null ],
 		[ "/Users/sparrvio/SmartCalc/sparrvio.cpp", "MU", null ],
 		[ "/Users/sparrvio/SmartCalc/src/calc.c", "MU", null ],
+		[ "/Users/sparrvio/SmartCalc/src/credit_calc_ann.c", "MU", null ],
+		[ "/Users/sparrvio/SmartCalc/src/credit_calc_diff.c", "MU", null ],
 		[ "/Users/sparrvio/SmartCalc/src/my_main.c", "MU", null ],
 		[ "/Users/sparrvio/SmartCalc/src/notation.c", "MU", null ],
 		[ "/Users/sparrvio/SmartCalc/src/parser.c", "MU", null ],

@@ -9,6 +9,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/sparrvio/SmartCalc/src/calc.c" "CMakeFiles/SmartCalc.dir/src/calc.c.o" "gcc" "CMakeFiles/SmartCalc.dir/src/calc.c.o.d"
+  "/Users/sparrvio/SmartCalc/src/credit_calc_ann.c" "CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.o" "gcc" "CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.o.d"
+  "/Users/sparrvio/SmartCalc/src/credit_calc_diff.c" "CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.o" "gcc" "CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.o.d"
   "/Users/sparrvio/SmartCalc/src/my_main.c" "CMakeFiles/SmartCalc.dir/src/my_main.c.o" "gcc" "CMakeFiles/SmartCalc.dir/src/my_main.c.o.d"
   "/Users/sparrvio/SmartCalc/src/notation.c" "CMakeFiles/SmartCalc.dir/src/notation.c.o" "gcc" "CMakeFiles/SmartCalc.dir/src/notation.c.o.d"
   "/Users/sparrvio/SmartCalc/src/parser.c" "CMakeFiles/SmartCalc.dir/src/parser.c.o" "gcc" "CMakeFiles/SmartCalc.dir/src/parser.c.o.d"

@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include <iostream>
 #include <creditcalc.h>
-#include <form.h>
+//#include <form.h>
 
 extern "C" {
 #include "src/s21_SmartCalc.h"

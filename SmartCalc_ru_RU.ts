@@ -65,6 +65,12 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="creditcalc.ui" line="778"/>
+        <source>8</source>
+        <oldsource>r</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="creditcalc.ui" line="426"/>
         <source>1</source>
         <translation type="unfinished"></translation>
@@ -112,11 +118,6 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</source>
     <message>
         <location filename="creditcalc.ui" line="740"/>
         <source>7</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="creditcalc.ui" line="778"/>
-        <source>8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -325,8 +326,8 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</source>
     </message>
     <message>
         <location filename="sparrvio.ui" line="364"/>
-        <source>ON/AC</source>
-        <oldsource>ON</oldsource>
+        <source>AC</source>
+        <oldsource>ON/AC</oldsource>
         <translation type="unfinished"></translation>
     </message>
     <message>

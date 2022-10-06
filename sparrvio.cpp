@@ -10,6 +10,7 @@ sparrvio::sparrvio(QWidget *parent) :
 
 {
     ui->setupUi(this);
+    ui->result->setText("0");
     connect(ui->pushButton_t,SIGNAL(clicked()),this,SLOT(press_button()));
     connect(ui->pushButton_brL,SIGNAL(clicked()),this,SLOT(press_button()));
     connect(ui->pushButton_brR,SIGNAL(clicked()),this,SLOT(press_button()));
@@ -24,13 +25,10 @@ sparrvio::sparrvio(QWidget *parent) :
     connect(ui->pushButton_8,SIGNAL(clicked()),this,SLOT(press_button()));
     connect(ui->pushButton_9,SIGNAL(clicked()),this,SLOT(press_button()));
     connect(ui->pushButton_ON,SIGNAL(clicked()),this,SLOT(on_pushButton_ON_clicked()));
-//    connect(ui->pushButton_sign,SIGNAL(clicked()),this,SLOT(press_button()));
-//    connect(ui->pushButton_percent,SIGNAL(clicked()),this,SLOT(press_button()));
     connect(ui->pushButton_div,SIGNAL(clicked()),this,SLOT(press_button()));
     connect(ui->pushButton_mult,SIGNAL(clicked()),this,SLOT(press_button()));
     connect(ui->pushButton_plus,SIGNAL(clicked()),this,SLOT(press_button()));
     connect(ui->pushButton_minus,SIGNAL(clicked()),this,SLOT(press_button()));
-//    connect(ui->pushButton_equal,SIGNAL(clicked()),this,SLOT(on_pushButton_equal_clicked()));
 }
 
 sparrvio::~sparrvio()
@@ -80,6 +78,8 @@ void sparrvio::on_pushButton_eq_clicked()
     strcpy(cstr, str_pp.c_str());
     double check = 0.0;
     int err = 0;
+
+
     err = my_main(cstr, &check);
     std::cout<<check<< std::endl;
     std::cout<<err<< std::endl;

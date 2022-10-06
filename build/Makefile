@@ -263,6 +263,54 @@ src/calc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/src/calc.c.s
 .PHONY : src/calc.c.s
 
+src/credit_calc_ann.o: src/credit_calc_ann.c.o
+.PHONY : src/credit_calc_ann.o
+
+# target to build an object file
+src/credit_calc_ann.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.o
+.PHONY : src/credit_calc_ann.c.o
+
+src/credit_calc_ann.i: src/credit_calc_ann.c.i
+.PHONY : src/credit_calc_ann.i
+
+# target to preprocess a source file
+src/credit_calc_ann.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.i
+.PHONY : src/credit_calc_ann.c.i
+
+src/credit_calc_ann.s: src/credit_calc_ann.c.s
+.PHONY : src/credit_calc_ann.s
+
+# target to generate assembly for a file
+src/credit_calc_ann.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.s
+.PHONY : src/credit_calc_ann.c.s
+
+src/credit_calc_diff.o: src/credit_calc_diff.c.o
+.PHONY : src/credit_calc_diff.o
+
+# target to build an object file
+src/credit_calc_diff.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.o
+.PHONY : src/credit_calc_diff.c.o
+
+src/credit_calc_diff.i: src/credit_calc_diff.c.i
+.PHONY : src/credit_calc_diff.i
+
+# target to preprocess a source file
+src/credit_calc_diff.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.i
+.PHONY : src/credit_calc_diff.c.i
+
+src/credit_calc_diff.s: src/credit_calc_diff.c.s
+.PHONY : src/credit_calc_diff.s
+
+# target to generate assembly for a file
+src/credit_calc_diff.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.s
+.PHONY : src/credit_calc_diff.c.s
+
 src/my_main.o: src/my_main.c.o
 .PHONY : src/my_main.o
 
@@ -384,6 +432,12 @@ help:
 	@echo "... src/calc.o"
 	@echo "... src/calc.i"
 	@echo "... src/calc.s"
+	@echo "... src/credit_calc_ann.o"
+	@echo "... src/credit_calc_ann.i"
+	@echo "... src/credit_calc_ann.s"
+	@echo "... src/credit_calc_diff.o"
+	@echo "... src/credit_calc_diff.i"
+	@echo "... src/credit_calc_diff.s"
 	@echo "... src/my_main.o"
 	@echo "... src/my_main.i"
 	@echo "... src/my_main.s"

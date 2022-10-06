@@ -43,5 +43,15 @@
   "directory": "/Users/sparrvio/SmartCalc/build",
   "command": "/usr/bin/clang -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/sparrvio/SmartCalc/build -I/Users/sparrvio/SmartCalc -I/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/include -iframework /usr/local/lib -isystem /usr/local/lib/QtCore.framework/Headers -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -fPIC -o CMakeFiles/SmartCalc.dir/src/my_main.c.o -c /Users/sparrvio/SmartCalc/src/my_main.c",
   "file": "/Users/sparrvio/SmartCalc/src/my_main.c"
+},
+{
+  "directory": "/Users/sparrvio/SmartCalc/build",
+  "command": "/usr/bin/clang -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/sparrvio/SmartCalc/build -I/Users/sparrvio/SmartCalc -I/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/include -iframework /usr/local/lib -isystem /usr/local/lib/QtCore.framework/Headers -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -fPIC -o CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.o -c /Users/sparrvio/SmartCalc/src/credit_calc_ann.c",
+  "file": "/Users/sparrvio/SmartCalc/src/credit_calc_ann.c"
+},
+{
+  "directory": "/Users/sparrvio/SmartCalc/build",
+  "command": "/usr/bin/clang -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/sparrvio/SmartCalc/build -I/Users/sparrvio/SmartCalc -I/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/include -iframework /usr/local/lib -isystem /usr/local/lib/QtCore.framework/Headers -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -fPIC -o CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.o -c /Users/sparrvio/SmartCalc/src/credit_calc_diff.c",
+  "file": "/Users/sparrvio/SmartCalc/src/credit_calc_diff.c"
 }
 ]

@@ -349,7 +349,7 @@ QPushButton:pressed {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton {
-	border: 2px solid gray;
+	border: 2px solid green;
  	border-radius: 35px;
 	background-color:rgb(216, 214, 218);
 	margin: 0px
@@ -361,7 +361,7 @@ QPushButton:pressed {
 }</string>
       </property>
       <property name="text">
-       <string>ON/AC</string>
+       <string>AC</string>
       </property>
      </widget>
     </item>
@@ -1341,14 +1341,14 @@ QPushButton:pressed {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton {
-	border: 2px solid gray;
+	border: 2px solid green;
  	border-radius: 35px;
-	background-color:rgb(80, 203, 67); 
+	background-color:rgb(216, 214, 218);
 	margin: 0px
 }
 
 QPushButton:pressed {
-	background-color: rgb(216, 214, 218);
+	background-color: green;
 	color: white;
 }</string>
       </property>
@@ -1380,7 +1380,7 @@ QPushButton:pressed {
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton {
-	border: 2px solid gray;
+	border: 2px solid rgb(255, 40, 21);
  	border-radius: 35px;
 	background-color:rgb(216, 214, 218);
 	margin: 0px
@@ -1396,6 +1396,9 @@ QPushButton:pressed {
        <string>OFF</string>
       </property>
      </widget>
+    </item>
+    <item row="7" column="7">
+     <widget class="QLineEdit" name="lineEdit"/>
     </item>
    </layout>
   </widget>
