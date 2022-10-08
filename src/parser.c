@@ -58,55 +58,55 @@ int parser(char* str, s21_SmartCalc tmp) {
           break;
         case 's':
           tmp[num_struct].type = s21_sin;
-          tmp[num_struct].priority = 4;
+          tmp[num_struct].priority = 5;
           tmp[num_struct].num = num_struct;
           num_struct++;
           break;
         case 'c':
           tmp[num_struct].type = s21_cos;
-          tmp[num_struct].priority = 4;
+          tmp[num_struct].priority = 5;
           tmp[num_struct].num = num_struct;
           num_struct++;
           break;
         case 't':
           tmp[num_struct].type = s21_tan;
-          tmp[num_struct].priority = 4;
+          tmp[num_struct].priority = 5;
           tmp[num_struct].num = num_struct;
           num_struct++;
           break;
         case 'C':
           tmp[num_struct].type = s21_acos;
-          tmp[num_struct].priority = 4;
+          tmp[num_struct].priority = 5;
           tmp[num_struct].num = num_struct;
           num_struct++;
           break;
         case 'S':
           tmp[num_struct].type = s21_asin;
-          tmp[num_struct].priority = 4;
+          tmp[num_struct].priority = 5;
           tmp[num_struct].num = num_struct;
           num_struct++;
           break;
         case 'T':
           tmp[num_struct].type = s21_atan;
-          tmp[num_struct].priority = 4;
+          tmp[num_struct].priority = 5;
           tmp[num_struct].num = num_struct;
           num_struct++;
           break;
         case 'q':
           tmp[num_struct].type = s21_sqrt;
-          tmp[num_struct].priority = 4;
+          tmp[num_struct].priority = 5;
           tmp[num_struct].num = num_struct;
           num_struct++;
           break;
         case 'l':
           tmp[num_struct].type = s21_ln;
-          tmp[num_struct].priority = 4;
+          tmp[num_struct].priority = 5;
           tmp[num_struct].num = num_struct;
           num_struct++;
           break;
         case 'L':
           tmp[num_struct].type = s21_log;
-          tmp[num_struct].priority = 4;
+          tmp[num_struct].priority = 5;
           tmp[num_struct].num = num_struct;
           num_struct++;
           break;
@@ -118,7 +118,7 @@ int parser(char* str, s21_SmartCalc tmp) {
           break;
         case ')':
           tmp[num_struct].type = bracket_r;
-          tmp[num_struct].priority = 5;
+          tmp[num_struct].priority = 6;
           tmp[num_struct].num = num_struct;
           num_struct++;
           break;

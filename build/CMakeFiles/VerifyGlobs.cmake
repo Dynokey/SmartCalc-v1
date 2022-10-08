@@ -54,6 +54,7 @@ set(OLD_GLOB
   "/Users/sparrvio/SmartCalc/creditcalc.cpp"
   "/Users/sparrvio/SmartCalc/main.cpp"
   "/Users/sparrvio/SmartCalc/sparrvio.cpp"
+  "/Users/sparrvio/SmartCalc/win_for_x.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -75,6 +76,7 @@ set(OLD_GLOB
   "/Users/sparrvio/SmartCalc/creditcalc.h"
   "/Users/sparrvio/SmartCalc/sparrvio.h"
   "/Users/sparrvio/SmartCalc/src/s21_SmartCalc.h"
+  "/Users/sparrvio/SmartCalc/win_for_x.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -176,6 +178,7 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Users/sparrvio/SmartCalc/*.u
 set(OLD_GLOB
   "/Users/sparrvio/SmartCalc/creditcalc.ui"
   "/Users/sparrvio/SmartCalc/sparrvio.ui"
+  "/Users/sparrvio/SmartCalc/win_for_x.ui"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

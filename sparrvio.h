@@ -2,9 +2,16 @@
 #define SPARRVIO_H
 
 #include <QMainWindow>
+#include <QtWidgets/QWidget>
+//#include <QSplineSeries>
+//#include <QtCharts>
+//#include <QChartView>
+#include <QInputDialog>
+#include <QtCharts/QValueAxis>
+#include <QTextEdit>
 #include <iostream>
 #include <creditcalc.h>
-//#include <form.h>
+#include <win_for_x.h>
 
 extern "C" {
 #include "src/s21_SmartCalc.h"
@@ -22,6 +29,7 @@ public:
     sparrvio(QWidget *parent = nullptr);
     ~sparrvio();
     int flag = 0;
+    int clicked_t = 0;
 
 private:
     Ui::sparrvio *ui;
@@ -48,5 +56,7 @@ private slots:
     void on_pushButton_BackSpace_clicked();
 
     void on_pushButtonCredit_clicked();
+    void on_pushButton_X_clicked();
+    void on_pushButton_t_clicked();
 };
 #endif // SPARRVIO_H

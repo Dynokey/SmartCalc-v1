@@ -407,6 +407,30 @@ src/validator.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/src/validator.c.s
 .PHONY : src/validator.c.s
 
+win_for_x.o: win_for_x.cpp.o
+.PHONY : win_for_x.o
+
+# target to build an object file
+win_for_x.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/win_for_x.cpp.o
+.PHONY : win_for_x.cpp.o
+
+win_for_x.i: win_for_x.cpp.i
+.PHONY : win_for_x.i
+
+# target to preprocess a source file
+win_for_x.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/win_for_x.cpp.i
+.PHONY : win_for_x.cpp.i
+
+win_for_x.s: win_for_x.cpp.s
+.PHONY : win_for_x.s
+
+# target to generate assembly for a file
+win_for_x.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/win_for_x.cpp.s
+.PHONY : win_for_x.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -450,6 +474,9 @@ help:
 	@echo "... src/validator.o"
 	@echo "... src/validator.i"
 	@echo "... src/validator.s"
+	@echo "... win_for_x.o"
+	@echo "... win_for_x.i"
+	@echo "... win_for_x.s"
 .PHONY : help
 
 

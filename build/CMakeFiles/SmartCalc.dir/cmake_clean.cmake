@@ -25,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SmartCalc.dir/src/parser.c.o.d"
   "CMakeFiles/SmartCalc.dir/src/validator.c.o"
   "CMakeFiles/SmartCalc.dir/src/validator.c.o.d"
+  "CMakeFiles/SmartCalc.dir/win_for_x.cpp.o"
+  "CMakeFiles/SmartCalc.dir/win_for_x.cpp.o.d"
   "SmartCalc.app/Contents/MacOS/SmartCalc"
   "SmartCalc.pdb"
 )

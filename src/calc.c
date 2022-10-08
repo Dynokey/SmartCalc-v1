@@ -76,11 +76,11 @@ double calc(s21_SmartCalc rpn) {
           rpn[i].type = delet;
           break;
         case s21_ln:
-          arr[count_arr - 1] = log10(arr[count_arr - 1]);
+          arr[count_arr - 1] = log(arr[count_arr - 1]);
           rpn[i].type = delet;
           break;
         case s21_log:
-          arr[count_arr - 1] = log(arr[count_arr - 1]);
+          arr[count_arr - 1] = log10f(arr[count_arr - 1]);
           rpn[i].type = delet;
           break;
         case un_minus:
@@ -92,5 +92,10 @@ double calc(s21_SmartCalc rpn) {
       }
     }
   }
-  return ((round(arr[0] * 100000000))/100000000);
+  
+  double ret = ((round(arr[0] * 100000000))/100000000);
+  // while(ret - ret/10 < 0.1){
+  //   ret = ret /10;
+  // }
+    return ret;
 }

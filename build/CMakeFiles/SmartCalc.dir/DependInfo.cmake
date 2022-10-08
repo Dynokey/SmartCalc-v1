@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/sparrvio/SmartCalc/creditcalc.cpp" "CMakeFiles/SmartCalc.dir/creditcalc.cpp.o" "gcc" "CMakeFiles/SmartCalc.dir/creditcalc.cpp.o.d"
   "/Users/sparrvio/SmartCalc/main.cpp" "CMakeFiles/SmartCalc.dir/main.cpp.o" "gcc" "CMakeFiles/SmartCalc.dir/main.cpp.o.d"
   "/Users/sparrvio/SmartCalc/sparrvio.cpp" "CMakeFiles/SmartCalc.dir/sparrvio.cpp.o" "gcc" "CMakeFiles/SmartCalc.dir/sparrvio.cpp.o.d"
+  "/Users/sparrvio/SmartCalc/win_for_x.cpp" "CMakeFiles/SmartCalc.dir/win_for_x.cpp.o" "gcc" "CMakeFiles/SmartCalc.dir/win_for_x.cpp.o.d"
   )
 
 # Targets to which this target links.

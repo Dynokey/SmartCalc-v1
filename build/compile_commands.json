@@ -53,5 +53,10 @@
   "directory": "/Users/sparrvio/SmartCalc/build",
   "command": "/usr/bin/clang -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/sparrvio/SmartCalc/build -I/Users/sparrvio/SmartCalc -I/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/include -iframework /usr/local/lib -isystem /usr/local/lib/QtCore.framework/Headers -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -fPIC -o CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.o -c /Users/sparrvio/SmartCalc/src/credit_calc_diff.c",
   "file": "/Users/sparrvio/SmartCalc/src/credit_calc_diff.c"
+},
+{
+  "directory": "/Users/sparrvio/SmartCalc/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/sparrvio/SmartCalc/build -I/Users/sparrvio/SmartCalc -I/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/include -iframework /usr/local/lib -isystem /usr/local/lib/QtCore.framework/Headers -isystem /usr/local/share/qt/mkspecs/macx-clang -isystem /usr/local/include -isystem /usr/local/lib/QtWidgets.framework/Headers -isystem /usr/local/lib/QtGui.framework/Headers -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk -mmacosx-version-min=11.6 -fPIC -std=gnu++17 -o CMakeFiles/SmartCalc.dir/win_for_x.cpp.o -c /Users/sparrvio/SmartCalc/win_for_x.cpp",
+  "file": "/Users/sparrvio/SmartCalc/win_for_x.cpp"
 }
 ]

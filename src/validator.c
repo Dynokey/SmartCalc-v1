@@ -99,7 +99,8 @@ int validator(char* str) {
     if(str[i] == '%'){
       str[i] = 'm';
     }
-    if(str[i] == 'L' && i + 2 < len && str[i + 1] == 'o' &&  str[i + 2] == 'g'){
+    if(str[i] == 'l' && i + 2 < len && str[i + 1] == 'o' &&  str[i + 2] == 'g'){
+      str[i] = 'L';
       str[i + 1] = ' ';
       str[i + 2] = ' ';
       i += 2;

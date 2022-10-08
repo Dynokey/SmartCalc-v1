@@ -327,6 +327,12 @@
 			"MU",
 			"UVLADIE3JM/moc_s21_SmartCalc.cpp",
 			null
+		],
+		[
+			"/Users/sparrvio/SmartCalc/win_for_x.h",
+			"MU",
+			"EWIEGA46WW/moc_win_for_x.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -390,7 +396,8 @@
 		[ "/Users/sparrvio/SmartCalc/src/my_main.c", "MU", null ],
 		[ "/Users/sparrvio/SmartCalc/src/notation.c", "MU", null ],
 		[ "/Users/sparrvio/SmartCalc/src/parser.c", "MU", null ],
-		[ "/Users/sparrvio/SmartCalc/src/validator.c", "MU", null ]
+		[ "/Users/sparrvio/SmartCalc/src/validator.c", "MU", null ],
+		[ "/Users/sparrvio/SmartCalc/win_for_x.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

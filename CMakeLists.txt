@@ -35,6 +35,11 @@ set(PROJECT_SOURCES
         src/credit_calc_ann.c
         src/credit_calc_diff.c
 
+        win_for_x.h
+        win_for_x.cpp
+        win_for_x.ui
+
+
         ${TS_FILES}
 )
 

@@ -11,7 +11,7 @@ sparrvio::sparrvio(QWidget *parent) :
 {
     ui->setupUi(this);
     ui->result->setText("0");
-    connect(ui->pushButton_t,SIGNAL(clicked()),this,SLOT(press_button()));
+//    connect(ui->pushButton_t,SIGNAL(clicked()),this,SLOT(press_button()));
     connect(ui->pushButton_brL,SIGNAL(clicked()),this,SLOT(press_button()));
     connect(ui->pushButton_brR,SIGNAL(clicked()),this,SLOT(press_button()));
     connect(ui->pushButton_0,SIGNAL(clicked()),this,SLOT(press_button()));
@@ -54,6 +54,10 @@ void sparrvio::press_button()
             ui->result->setText(ui->result->text() + button->text());
         }
     }
+
+    if(button-> text() == "*" || button-> text() == "/" || button-> text() == "+" || button-> text() == "-"){
+        clicked_t = 0;
+    }
 }
 
 void sparrvio::on_pushButton_ON_clicked()
@@ -71,6 +75,7 @@ void sparrvio::on_pushButton_ON_clicked()
 void sparrvio::on_pushButton_eq_clicked()
 {
     flag = 1;
+    clicked_t = 0;
     QString input = ui->result->text();
     std::string str_pp = input.toStdString();
     char* cstr = new char[str_pp.length() + 1];
@@ -154,6 +159,8 @@ void sparrvio::on_pushButton_tan_clicked()
 
 void sparrvio::on_pushButton_sqrt_clicked()
 {
+    clicked_t = 0;
+
     if(flag != 0){
         ui->result->clear();
         flag = 0;
@@ -226,6 +233,8 @@ void sparrvio::on_pushButton_atan_clicked()
 
 void sparrvio::on_pushButton_mod_clicked()
 {
+    clicked_t = 0;
+
     if(flag != 0){
         ui->result->clear();
         flag = 0;
@@ -280,6 +289,8 @@ void sparrvio::on_pushButton_ln_clicked()
 
 void sparrvio::on_pushButton_scale_clicked()
 {
+    clicked_t = 0;
+
     if(flag != 0){
         ui->result->clear();
         flag = 0;
@@ -303,12 +314,17 @@ void sparrvio::on_pushButton_OFF_clicked()
 
 void sparrvio::on_pushButton_BackSpace_clicked()
 {
+    if(ui->result->text().endsWith('.')){
+        clicked_t = 0;
+    }
+
     QString text = ui->result->text();
     text.chop(1);
 
     if(text.isEmpty()){
         text = "0";
     }
+
     ui->result->setText(text);
 }
 
@@ -319,5 +335,22 @@ void sparrvio::on_pushButtonCredit_clicked()
     CreditCalc window;
     window.setModal(true);
     window.exec();
+}
+
+
+void sparrvio::on_pushButton_X_clicked()
+{
+    win_for_x  window;
+    window.setModal(true);
+    window.exec();
+}
+
+
+void sparrvio::on_pushButton_t_clicked()
+{
+    if(clicked_t == 0){
+        ui->result->setText(ui->result->text() + ".");
+    }
+    clicked_t = 1;
 }
 
