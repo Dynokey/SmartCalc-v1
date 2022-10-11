@@ -2,7 +2,11 @@
 #define WIN_FOR_X_H
 
 #include <QDialog>
-#include <QString>
+#include "sparrvio.h"
+
+extern "C" {
+#include "src/s21_SmartCalc.h"
+}
 
 namespace Ui {
 class win_for_x;
@@ -18,6 +22,10 @@ public:
 
 private slots:
     void on_pushButton_ok_clicked();
+
+    void on_pushButton_AC_clicked();
+
+    void on_pushButton_eq_clicked();
 
 private:
     Ui::win_for_x *ui;

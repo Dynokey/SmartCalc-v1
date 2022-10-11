@@ -3,16 +3,12 @@
 
 #include <QMainWindow>
 #include <QtWidgets/QWidget>
-//#include <QSplineSeries>
-//#include <QtCharts>
-//#include <QChartView>
 #include <QInputDialog>
 #include <QtCharts/QValueAxis>
 #include <QTextEdit>
 #include <QDialog>
 #include <iostream>
 #include "creditcalc.h"
-#include "win_for_x.h"
 #include "graf_win.h"
 #include "qcustomplot.h"
 #include "global.h"
@@ -39,12 +35,10 @@ private:
     Ui::sparrvio *ui;
     CreditCalc win_credit;
 
-
 private slots:
     void press_button();
     void on_pushButton_ON_clicked();
     void on_pushButton_eq_clicked();
-//    void on_pushButton_t_clicked();
     void on_pushButton_sin_clicked();
     void on_pushButton_cos_clicked();
     void on_pushButton_tan_clicked();
@@ -60,7 +54,6 @@ private slots:
     void on_pushButton_BackSpace_clicked();
 
     void on_pushButton_Credit_clicked();
-    void on_pushButton_x_eq_clicked();
     void on_pushButton_t_clicked();
     void on_pushButton_graf_clicked();
     void on_pushButton_x_clicked();

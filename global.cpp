@@ -6,4 +6,5 @@
 namespace global {
   double x_value;
   bool flag_x_value = false;
+  QString str_for_x_eq;
 }

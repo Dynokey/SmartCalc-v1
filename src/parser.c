@@ -15,7 +15,6 @@ int parser(char* str, s21_SmartCalc tmp, double x) {
           tmp[num_struct].type = number;
           tmp[num_struct].priority = 0;
           tmp[num_struct].num = num_struct;
-          print_struct(tmp, num_struct - 2, num_struct);
           num_struct++;
           break;
         case '+':

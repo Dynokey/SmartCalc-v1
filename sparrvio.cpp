@@ -1,7 +1,9 @@
 #include "sparrvio.h"
 #include "./ui_sparrvio.h"
 #include "src/s21_SmartCalc.h"
-#include "global.h"
+#include "win_for_x.h"
+//#include "global.h"
+
 
 sparrvio::sparrvio(QWidget *parent) :
     QMainWindow(parent),
@@ -24,7 +26,6 @@ sparrvio::sparrvio(QWidget *parent) :
     connect(ui->pushButton_7,SIGNAL(clicked()),this,SLOT(press_button()));
     connect(ui->pushButton_8,SIGNAL(clicked()),this,SLOT(press_button()));
     connect(ui->pushButton_9,SIGNAL(clicked()),this,SLOT(press_button()));
-    connect(ui->pushButton_ON,SIGNAL(clicked()),this,SLOT(on_pushButton_ON_clicked()));
     connect(ui->pushButton_div,SIGNAL(clicked()),this,SLOT(press_button()));
     connect(ui->pushButton_mult,SIGNAL(clicked()),this,SLOT(press_button()));
     connect(ui->pushButton_plus,SIGNAL(clicked()),this,SLOT(press_button()));
@@ -63,12 +64,13 @@ void sparrvio::press_button()
 void sparrvio::on_pushButton_ON_clicked()
 
 {
+    ui->result->setText("0");
+    global::flag_x_value = false;
     ui->pushButton_t->setChecked(false);
     ui->pushButton_div->setChecked(false);
     ui->pushButton_mult->setChecked(false);
     ui->pushButton_minus->setChecked(false);
     ui->pushButton_plus->setChecked(false);
-    ui->result->setText("0");
 }
 
 
@@ -76,7 +78,9 @@ void sparrvio::on_pushButton_eq_clicked()
 {
     flag = 1;
     clicked_t = 0;
-    if(global::flag_x_value == true){
+    if(
+        global::flag_x_value == true){
+        global::str_for_x_eq = ui->result->text();
         win_for_x  window;
         window.setModal(true);
         window.exec();
@@ -92,8 +96,9 @@ void sparrvio::on_pushButton_eq_clicked()
 
 
         err = my_main(cstr, &check, global::x_value);
-        std::cout<<check<< std::endl;
-        std::cout<<err<< std::endl;
+
+//        std::cout<<check<< std::endl;
+//        std::cout<<err<< std::endl;
 
         std::string res_str(cstr);
 
@@ -355,13 +360,6 @@ void sparrvio::on_pushButton_Credit_clicked()
 }
 
 
-void sparrvio::on_pushButton_x_eq_clicked()
-{
-    win_for_x  window;
-    window.setModal(true);
-    window.exec();
-}
-
 void sparrvio::on_pushButton_graf_clicked()
 {
     graf_win window;
@@ -375,7 +373,6 @@ void sparrvio::on_pushButton_graf_clicked()
 void sparrvio::on_pushButton_x_clicked()
 {
     global::flag_x_value = true;
-    QPushButton *button = (QPushButton *) sender();
     if (ui->result->text().endsWith("0") && ui->result->text().size() == 1) {
         ui->result->setText("x");
     } else {

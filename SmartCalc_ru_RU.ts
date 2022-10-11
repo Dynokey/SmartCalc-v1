@@ -184,73 +184,79 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="78"/>
+        <location filename="sparrvio.ui" line="425"/>
         <source>CreditCalc</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="117"/>
+        <location filename="sparrvio.ui" line="464"/>
         <source>acos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="157"/>
+        <location filename="sparrvio.ui" line="722"/>
+        <source>ሀ</source>
+        <oldsource>২</oldsource>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="sparrvio.ui" line="839"/>
         <source>OFF</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="196"/>
+        <location filename="sparrvio.ui" line="1433"/>
         <source>cos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="234"/>
+        <location filename="sparrvio.ui" line="155"/>
         <source>8</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="272"/>
+        <location filename="sparrvio.ui" line="232"/>
         <source>5</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="310"/>
+        <location filename="sparrvio.ui" line="799"/>
         <source>.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="353"/>
+        <location filename="sparrvio.ui" line="882"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;&lt;span style=&quot; font-size:96pt;&quot;&gt;0&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="385"/>
-        <location filename="sparrvio.ui" line="543"/>
+        <location filename="sparrvio.ui" line="914"/>
+        <location filename="sparrvio.ui" line="1459"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Возведение в степень&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="401"/>
+        <location filename="sparrvio.ui" line="930"/>
         <source>(</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="440"/>
+        <location filename="sparrvio.ui" line="194"/>
         <source>/</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="479"/>
+        <location filename="sparrvio.ui" line="271"/>
         <source>sin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="517"/>
+        <location filename="sparrvio.ui" line="78"/>
         <source>6</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="559"/>
+        <location filename="sparrvio.ui" line="1475"/>
         <source>←</source>
         <translation type="unfinished"></translation>
     </message>
@@ -260,122 +266,112 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="642"/>
+        <location filename="sparrvio.ui" line="1162"/>
         <source>atan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="681"/>
+        <location filename="sparrvio.ui" line="1084"/>
         <source>ln</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="719"/>
+        <location filename="sparrvio.ui" line="1045"/>
         <source>9</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="756"/>
+        <location filename="sparrvio.ui" line="501"/>
         <source>0</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="795"/>
+        <location filename="sparrvio.ui" line="1316"/>
         <source>AC</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="849"/>
+        <location filename="sparrvio.ui" line="1238"/>
         <source>4</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="888"/>
+        <location filename="sparrvio.ui" line="310"/>
         <source>+</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="926"/>
+        <location filename="sparrvio.ui" line="348"/>
         <source>7</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="965"/>
+        <location filename="sparrvio.ui" line="969"/>
         <source>1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="991"/>
+        <location filename="sparrvio.ui" line="527"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Извлечение корня&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="1007"/>
+        <location filename="sparrvio.ui" line="543"/>
         <source>)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="1046"/>
+        <location filename="sparrvio.ui" line="680"/>
         <source>tan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="1085"/>
+        <location filename="sparrvio.ui" line="387"/>
         <source>mod</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="1124"/>
+        <location filename="sparrvio.ui" line="1123"/>
         <source>log</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="1163"/>
+        <location filename="sparrvio.ui" line="1355"/>
         <source>-</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="1202"/>
+        <location filename="sparrvio.ui" line="1277"/>
         <source>*</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="1240"/>
+        <location filename="sparrvio.ui" line="1200"/>
         <source>2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="1279"/>
+        <location filename="sparrvio.ui" line="1394"/>
         <source>asin</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="1318"/>
+        <location filename="sparrvio.ui" line="761"/>
         <source>scale</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="1357"/>
-        <source>graff</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sparrvio.ui" line="1396"/>
-        <source>x =</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="sparrvio.ui" line="1434"/>
+        <location filename="sparrvio.ui" line="641"/>
         <source>=</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="1472"/>
+        <location filename="sparrvio.ui" line="1007"/>
         <source>x</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="sparrvio.ui" line="1511"/>
+        <location filename="sparrvio.ui" line="117"/>
         <source>√</source>
         <translation type="unfinished"></translation>
     </message>
@@ -383,13 +379,23 @@ font: 18pt &quot;.AppleSystemUIFont&quot;;</source>
 <context>
     <name>win_for_x</name>
     <message>
-        <location filename="win_for_x.ui" line="20"/>
+        <location filename="win_for_x.ui" line="14"/>
         <source>Dialog</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="win_for_x.ui" line="60"/>
+        <location filename="win_for_x.ui" line="57"/>
         <source>OK</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="win_for_x.ui" line="123"/>
+        <source>=</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="win_for_x.ui" line="164"/>
+        <source>AC</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
