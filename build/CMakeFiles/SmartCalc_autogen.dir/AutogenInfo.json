@@ -317,6 +317,24 @@
 			null
 		],
 		[
+			"/Users/sparrvio/SmartCalc/global.h",
+			"MU",
+			"EWIEGA46WW/moc_global.cpp",
+			null
+		],
+		[
+			"/Users/sparrvio/SmartCalc/graf_win.h",
+			"MU",
+			"EWIEGA46WW/moc_graf_win.cpp",
+			null
+		],
+		[
+			"/Users/sparrvio/SmartCalc/qcustomplot.h",
+			"MU",
+			"EWIEGA46WW/moc_qcustomplot.cpp",
+			null
+		],
+		[
 			"/Users/sparrvio/SmartCalc/sparrvio.h",
 			"MU",
 			"EWIEGA46WW/moc_sparrvio.cpp",
@@ -388,7 +406,10 @@
 	"SOURCES" : 
 	[
 		[ "/Users/sparrvio/SmartCalc/creditcalc.cpp", "MU", null ],
+		[ "/Users/sparrvio/SmartCalc/global.cpp", "MU", null ],
+		[ "/Users/sparrvio/SmartCalc/graf_win.cpp", "MU", null ],
 		[ "/Users/sparrvio/SmartCalc/main.cpp", "MU", null ],
+		[ "/Users/sparrvio/SmartCalc/qcustomplot.cpp", "MU", null ],
 		[ "/Users/sparrvio/SmartCalc/sparrvio.cpp", "MU", null ],
 		[ "/Users/sparrvio/SmartCalc/src/calc.c", "MU", null ],
 		[ "/Users/sparrvio/SmartCalc/src/credit_calc_ann.c", "MU", null ],

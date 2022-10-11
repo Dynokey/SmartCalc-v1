@@ -52,7 +52,11 @@ file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Users/sparrvio/SmartCalc/*.c
 set(OLD_GLOB
   "/Users/sparrvio/SmartCalc/build/CMakeFiles/3.23.0/CompilerIdCXX/CMakeCXXCompilerId.cpp"
   "/Users/sparrvio/SmartCalc/creditcalc.cpp"
+  "/Users/sparrvio/SmartCalc/global.cpp"
+  "/Users/sparrvio/SmartCalc/graf_win.cpp"
+  "/Users/sparrvio/SmartCalc/graff.cpp"
   "/Users/sparrvio/SmartCalc/main.cpp"
+  "/Users/sparrvio/SmartCalc/qcustomplot.cpp"
   "/Users/sparrvio/SmartCalc/sparrvio.cpp"
   "/Users/sparrvio/SmartCalc/win_for_x.cpp"
   )
@@ -74,6 +78,10 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Users/sparrvio/SmartCalc/*.h")
 set(OLD_GLOB
   "/Users/sparrvio/SmartCalc/creditcalc.h"
+  "/Users/sparrvio/SmartCalc/global.h"
+  "/Users/sparrvio/SmartCalc/graf_win.h"
+  "/Users/sparrvio/SmartCalc/graff.h"
+  "/Users/sparrvio/SmartCalc/qcustomplot.h"
   "/Users/sparrvio/SmartCalc/sparrvio.h"
   "/Users/sparrvio/SmartCalc/src/s21_SmartCalc.h"
   "/Users/sparrvio/SmartCalc/win_for_x.h"
@@ -177,8 +185,11 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Users/sparrvio/SmartCalc/*.ui")
 set(OLD_GLOB
   "/Users/sparrvio/SmartCalc/creditcalc.ui"
+  "/Users/sparrvio/SmartCalc/graf_win.ui"
+  "/Users/sparrvio/SmartCalc/graff.ui"
   "/Users/sparrvio/SmartCalc/sparrvio.ui"
   "/Users/sparrvio/SmartCalc/win_for_x.ui"
+  "/Users/sparrvio/SmartCalc/x_value.ui"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")

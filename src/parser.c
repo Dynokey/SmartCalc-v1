@@ -1,6 +1,6 @@
 #include "s21_SmartCalc.h"
 
-int parser(char* str, s21_SmartCalc tmp) {
+int parser(char* str, s21_SmartCalc tmp, double x) {
   int num_struct = 0;
   size_t str_len = strlen(str);
   for (size_t i = 0; i < str_len; i++) {
@@ -10,6 +10,14 @@ int parser(char* str, s21_SmartCalc tmp) {
       num_struct++;
     } else {
       switch (str[i]) {
+        case 'x':
+          tmp[num_struct].value = x;
+          tmp[num_struct].type = number;
+          tmp[num_struct].priority = 0;
+          tmp[num_struct].num = num_struct;
+          print_struct(tmp, num_struct - 2, num_struct);
+          num_struct++;
+          break;
         case '+':
           if (i == 0 || tmp[num_struct - 1].type == bracket_l) {
           } else {

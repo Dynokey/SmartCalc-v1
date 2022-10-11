@@ -39,6 +39,16 @@ set(PROJECT_SOURCES
         win_for_x.cpp
         win_for_x.ui
 
+        qcustomplot.h
+        qcustomplot.cpp
+
+        graf_win.h
+        graf_win.cpp
+        graf_win.ui
+
+        global.cpp
+        global.h
+
 
         ${TS_FILES}
 )

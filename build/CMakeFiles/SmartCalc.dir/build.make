@@ -74,7 +74,17 @@ include CMakeFiles/SmartCalc.dir/flags.make
 ../SmartCalc_ru_RU.ts: ../creditcalc.cpp
 ../SmartCalc_ru_RU.ts: ../creditcalc.h
 ../SmartCalc_ru_RU.ts: ../creditcalc.ui
+../SmartCalc_ru_RU.ts: ../global.cpp
+../SmartCalc_ru_RU.ts: ../global.h
+../SmartCalc_ru_RU.ts: ../graf_win.cpp
+../SmartCalc_ru_RU.ts: ../graf_win.h
+../SmartCalc_ru_RU.ts: ../graf_win.ui
+../SmartCalc_ru_RU.ts: ../graff.cpp
+../SmartCalc_ru_RU.ts: ../graff.h
+../SmartCalc_ru_RU.ts: ../graff.ui
 ../SmartCalc_ru_RU.ts: ../main.cpp
+../SmartCalc_ru_RU.ts: ../qcustomplot.cpp
+../SmartCalc_ru_RU.ts: ../qcustomplot.h
 ../SmartCalc_ru_RU.ts: ../sparrvio.cpp
 ../SmartCalc_ru_RU.ts: ../sparrvio.h
 ../SmartCalc_ru_RU.ts: ../sparrvio.ui
@@ -90,6 +100,7 @@ include CMakeFiles/SmartCalc.dir/flags.make
 ../SmartCalc_ru_RU.ts: ../win_for_x.cpp
 ../SmartCalc_ru_RU.ts: ../win_for_x.h
 ../SmartCalc_ru_RU.ts: ../win_for_x.ui
+../SmartCalc_ru_RU.ts: ../x_value.ui
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/sparrvio/SmartCalc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../SmartCalc_ru_RU.ts"
 	/usr/local/bin/lupdate @/Users/sparrvio/SmartCalc/build/CMakeFiles/SmartCalc_ru_RU.ts_lst_file -ts /Users/sparrvio/SmartCalc/SmartCalc_ru_RU.ts
 
@@ -261,6 +272,48 @@ CMakeFiles/SmartCalc.dir/win_for_x.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SmartCalc.dir/win_for_x.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sparrvio/SmartCalc/win_for_x.cpp -o CMakeFiles/SmartCalc.dir/win_for_x.cpp.s
 
+CMakeFiles/SmartCalc.dir/qcustomplot.cpp.o: CMakeFiles/SmartCalc.dir/flags.make
+CMakeFiles/SmartCalc.dir/qcustomplot.cpp.o: ../qcustomplot.cpp
+CMakeFiles/SmartCalc.dir/qcustomplot.cpp.o: CMakeFiles/SmartCalc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sparrvio/SmartCalc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/SmartCalc.dir/qcustomplot.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCalc.dir/qcustomplot.cpp.o -MF CMakeFiles/SmartCalc.dir/qcustomplot.cpp.o.d -o CMakeFiles/SmartCalc.dir/qcustomplot.cpp.o -c /Users/sparrvio/SmartCalc/qcustomplot.cpp
+
+CMakeFiles/SmartCalc.dir/qcustomplot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SmartCalc.dir/qcustomplot.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sparrvio/SmartCalc/qcustomplot.cpp > CMakeFiles/SmartCalc.dir/qcustomplot.cpp.i
+
+CMakeFiles/SmartCalc.dir/qcustomplot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SmartCalc.dir/qcustomplot.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sparrvio/SmartCalc/qcustomplot.cpp -o CMakeFiles/SmartCalc.dir/qcustomplot.cpp.s
+
+CMakeFiles/SmartCalc.dir/graf_win.cpp.o: CMakeFiles/SmartCalc.dir/flags.make
+CMakeFiles/SmartCalc.dir/graf_win.cpp.o: ../graf_win.cpp
+CMakeFiles/SmartCalc.dir/graf_win.cpp.o: CMakeFiles/SmartCalc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sparrvio/SmartCalc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/SmartCalc.dir/graf_win.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCalc.dir/graf_win.cpp.o -MF CMakeFiles/SmartCalc.dir/graf_win.cpp.o.d -o CMakeFiles/SmartCalc.dir/graf_win.cpp.o -c /Users/sparrvio/SmartCalc/graf_win.cpp
+
+CMakeFiles/SmartCalc.dir/graf_win.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SmartCalc.dir/graf_win.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sparrvio/SmartCalc/graf_win.cpp > CMakeFiles/SmartCalc.dir/graf_win.cpp.i
+
+CMakeFiles/SmartCalc.dir/graf_win.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SmartCalc.dir/graf_win.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sparrvio/SmartCalc/graf_win.cpp -o CMakeFiles/SmartCalc.dir/graf_win.cpp.s
+
+CMakeFiles/SmartCalc.dir/global.cpp.o: CMakeFiles/SmartCalc.dir/flags.make
+CMakeFiles/SmartCalc.dir/global.cpp.o: ../global.cpp
+CMakeFiles/SmartCalc.dir/global.cpp.o: CMakeFiles/SmartCalc.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/sparrvio/SmartCalc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/SmartCalc.dir/global.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SmartCalc.dir/global.cpp.o -MF CMakeFiles/SmartCalc.dir/global.cpp.o.d -o CMakeFiles/SmartCalc.dir/global.cpp.o -c /Users/sparrvio/SmartCalc/global.cpp
+
+CMakeFiles/SmartCalc.dir/global.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SmartCalc.dir/global.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sparrvio/SmartCalc/global.cpp > CMakeFiles/SmartCalc.dir/global.cpp.i
+
+CMakeFiles/SmartCalc.dir/global.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SmartCalc.dir/global.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sparrvio/SmartCalc/global.cpp -o CMakeFiles/SmartCalc.dir/global.cpp.s
+
 # Object files for target SmartCalc
 SmartCalc_OBJECTS = \
 "CMakeFiles/SmartCalc.dir/SmartCalc_autogen/mocs_compilation.cpp.o" \
@@ -274,7 +327,10 @@ SmartCalc_OBJECTS = \
 "CMakeFiles/SmartCalc.dir/src/my_main.c.o" \
 "CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.o" \
 "CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.o" \
-"CMakeFiles/SmartCalc.dir/win_for_x.cpp.o"
+"CMakeFiles/SmartCalc.dir/win_for_x.cpp.o" \
+"CMakeFiles/SmartCalc.dir/qcustomplot.cpp.o" \
+"CMakeFiles/SmartCalc.dir/graf_win.cpp.o" \
+"CMakeFiles/SmartCalc.dir/global.cpp.o"
 
 # External object files for target SmartCalc
 SmartCalc_EXTERNAL_OBJECTS =
@@ -291,12 +347,15 @@ SmartCalc.app/Contents/MacOS/SmartCalc: CMakeFiles/SmartCalc.dir/src/my_main.c.o
 SmartCalc.app/Contents/MacOS/SmartCalc: CMakeFiles/SmartCalc.dir/src/credit_calc_ann.c.o
 SmartCalc.app/Contents/MacOS/SmartCalc: CMakeFiles/SmartCalc.dir/src/credit_calc_diff.c.o
 SmartCalc.app/Contents/MacOS/SmartCalc: CMakeFiles/SmartCalc.dir/win_for_x.cpp.o
+SmartCalc.app/Contents/MacOS/SmartCalc: CMakeFiles/SmartCalc.dir/qcustomplot.cpp.o
+SmartCalc.app/Contents/MacOS/SmartCalc: CMakeFiles/SmartCalc.dir/graf_win.cpp.o
+SmartCalc.app/Contents/MacOS/SmartCalc: CMakeFiles/SmartCalc.dir/global.cpp.o
 SmartCalc.app/Contents/MacOS/SmartCalc: CMakeFiles/SmartCalc.dir/build.make
 SmartCalc.app/Contents/MacOS/SmartCalc: /usr/local/lib/QtWidgets.framework/Versions/A/QtWidgets
 SmartCalc.app/Contents/MacOS/SmartCalc: /usr/local/lib/QtGui.framework/Versions/A/QtGui
 SmartCalc.app/Contents/MacOS/SmartCalc: /usr/local/lib/QtCore.framework/Versions/A/QtCore
 SmartCalc.app/Contents/MacOS/SmartCalc: CMakeFiles/SmartCalc.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sparrvio/SmartCalc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable SmartCalc.app/Contents/MacOS/SmartCalc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/sparrvio/SmartCalc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable SmartCalc.app/Contents/MacOS/SmartCalc"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SmartCalc.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

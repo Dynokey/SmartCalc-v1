@@ -191,6 +191,54 @@ creditcalc.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/creditcalc.cpp.s
 .PHONY : creditcalc.cpp.s
 
+global.o: global.cpp.o
+.PHONY : global.o
+
+# target to build an object file
+global.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/global.cpp.o
+.PHONY : global.cpp.o
+
+global.i: global.cpp.i
+.PHONY : global.i
+
+# target to preprocess a source file
+global.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/global.cpp.i
+.PHONY : global.cpp.i
+
+global.s: global.cpp.s
+.PHONY : global.s
+
+# target to generate assembly for a file
+global.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/global.cpp.s
+.PHONY : global.cpp.s
+
+graf_win.o: graf_win.cpp.o
+.PHONY : graf_win.o
+
+# target to build an object file
+graf_win.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/graf_win.cpp.o
+.PHONY : graf_win.cpp.o
+
+graf_win.i: graf_win.cpp.i
+.PHONY : graf_win.i
+
+# target to preprocess a source file
+graf_win.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/graf_win.cpp.i
+.PHONY : graf_win.cpp.i
+
+graf_win.s: graf_win.cpp.s
+.PHONY : graf_win.s
+
+# target to generate assembly for a file
+graf_win.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/graf_win.cpp.s
+.PHONY : graf_win.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -214,6 +262,30 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+qcustomplot.o: qcustomplot.cpp.o
+.PHONY : qcustomplot.o
+
+# target to build an object file
+qcustomplot.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/qcustomplot.cpp.o
+.PHONY : qcustomplot.cpp.o
+
+qcustomplot.i: qcustomplot.cpp.i
+.PHONY : qcustomplot.i
+
+# target to preprocess a source file
+qcustomplot.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/qcustomplot.cpp.i
+.PHONY : qcustomplot.cpp.i
+
+qcustomplot.s: qcustomplot.cpp.s
+.PHONY : qcustomplot.s
+
+# target to generate assembly for a file
+qcustomplot.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SmartCalc.dir/build.make CMakeFiles/SmartCalc.dir/qcustomplot.cpp.s
+.PHONY : qcustomplot.cpp.s
 
 sparrvio.o: sparrvio.cpp.o
 .PHONY : sparrvio.o
@@ -447,9 +519,18 @@ help:
 	@echo "... creditcalc.o"
 	@echo "... creditcalc.i"
 	@echo "... creditcalc.s"
+	@echo "... global.o"
+	@echo "... global.i"
+	@echo "... global.s"
+	@echo "... graf_win.o"
+	@echo "... graf_win.i"
+	@echo "... graf_win.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... qcustomplot.o"
+	@echo "... qcustomplot.i"
+	@echo "... qcustomplot.s"
 	@echo "... sparrvio.o"
 	@echo "... sparrvio.i"
 	@echo "... sparrvio.s"

@@ -2,8 +2,6 @@
 #include "ui_win_for_x.h"
 #include "sparrvio.h"
 
-
-
 win_for_x::win_for_x(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::win_for_x)
@@ -16,25 +14,26 @@ win_for_x::~win_for_x()
     delete ui;
 }
 
-void win_for_x::on_pushButton_clicked()
+void win_for_x::on_pushButton_ok_clicked()
 {
 //        QByteArray str = ui->x_text->toPlainText().toLocal8Bit();
-//        std::string s = ui->textEdit->toPlainText().toStdString();
-//        double x = ui->x_text->toPlainText().toDouble();
+//        std::string s = ui->x_text->toPlainText().toStdString();
 
+        QString str = ui->x_text->toPlainText();
+        int n = str.size();
+        std::cout<<n<< std::endl;
 
-//         QString str = ui->x_text->text();
-////         std::string res_str(str);
-//         std::cout<<str<< std::endl;
+        QString str_off = ui->x_text->toPlainText();
+        bool res = false;
 
-//    QString input = ui->x_text->text();
-//    std::string str_pp = input.toStdString();
-//    char* cstr = new char[str_pp.length() + 1];
+        double x = str_off.toDouble(&res);
+        if(!str.isEmpty() && res == true){
 
-//    strcpy(cstr, str_pp.c_str());
+            global::x_value = x;
+            global::flag_x_value = false;
 
-//        std::string res_str(cstr);
-
-        QWidget::close();
+            QWidget::close();
+        }
 }
+
 

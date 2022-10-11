@@ -3,7 +3,6 @@
 #include <QApplication>
 #include <QLocale>
 #include <QTranslator>
-#include <string.h>
 
 //#include <QtWidgets/QWidget>
 //#include <QSplineSeries>

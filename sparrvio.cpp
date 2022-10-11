@@ -1,7 +1,7 @@
 #include "sparrvio.h"
 #include "./ui_sparrvio.h"
 #include "src/s21_SmartCalc.h"
-
+#include "global.h"
 
 sparrvio::sparrvio(QWidget *parent) :
     QMainWindow(parent),
@@ -55,7 +55,7 @@ void sparrvio::press_button()
         }
     }
 
-    if(button-> text() == "*" || button-> text() == "/" || button-> text() == "+" || button-> text() == "-"){
+    if(button-> text() == "*" || button-> text() == "/" || button-> text() == "+" || button-> text() == "-" || button-> text() == "x"){
         clicked_t = 0;
     }
 }
@@ -76,29 +76,38 @@ void sparrvio::on_pushButton_eq_clicked()
 {
     flag = 1;
     clicked_t = 0;
-    QString input = ui->result->text();
-    std::string str_pp = input.toStdString();
-    char* cstr = new char[str_pp.length() + 1];
-
-    strcpy(cstr, str_pp.c_str());
-    double check = 0.0;
-    int err = 0;
-
-
-    err = my_main(cstr, &check);
-    std::cout<<check<< std::endl;
-    std::cout<<err<< std::endl;
-
-    std::string res_str(cstr);
-
-    if(err == 0){
-        QString num_to_str;
-        num_to_str = QString::number(check, 'g', 12);
-        ui->result->setText(num_to_str);
-        delete [] cstr;
+    if(global::flag_x_value == true){
+        win_for_x  window;
+        window.setModal(true);
+        window.exec();
     } else {
-        ui->result->clear();
-        ui->result->setText("Incorrect Input");
+
+        QString input = ui->result->text();
+        std::string str_pp = input.toStdString();
+        char* cstr = new char[str_pp.length() + 1];
+
+        strcpy(cstr, str_pp.c_str());
+        double check = 0.0;
+        int err = 0;
+
+
+        err = my_main(cstr, &check, global::x_value);
+        std::cout<<check<< std::endl;
+        std::cout<<err<< std::endl;
+
+        std::string res_str(cstr);
+
+        if(err == 0){
+            QString num_to_str;
+            num_to_str = QString::number(check, 'g', 12);
+            ui->result->setText(num_to_str);
+            delete [] cstr;
+        } else {
+            ui->result->clear();
+            ui->result->setText("Incorrect Input");
+        }
+        global::x_value = 0.0;
+        global::flag_x_value = false;
     }
 
 }
@@ -312,6 +321,7 @@ void sparrvio::on_pushButton_OFF_clicked()
     QApplication::quit();
 }
 
+
 void sparrvio::on_pushButton_BackSpace_clicked()
 {
     if(ui->result->text().endsWith('.')){
@@ -328,8 +338,15 @@ void sparrvio::on_pushButton_BackSpace_clicked()
     ui->result->setText(text);
 }
 
+void sparrvio::on_pushButton_t_clicked()
+{
+    if(clicked_t == 0){
+        ui->result->setText(ui->result->text() + ".");
+    }
+    clicked_t = 1;
+}
 
-void sparrvio::on_pushButtonCredit_clicked()
+void sparrvio::on_pushButton_Credit_clicked()
 {
 //    win_credit.show();
     CreditCalc window;
@@ -338,19 +355,31 @@ void sparrvio::on_pushButtonCredit_clicked()
 }
 
 
-void sparrvio::on_pushButton_X_clicked()
+void sparrvio::on_pushButton_x_eq_clicked()
 {
     win_for_x  window;
     window.setModal(true);
     window.exec();
 }
 
-
-void sparrvio::on_pushButton_t_clicked()
+void sparrvio::on_pushButton_graf_clicked()
 {
-    if(clicked_t == 0){
-        ui->result->setText(ui->result->text() + ".");
-    }
-    clicked_t = 1;
+    graf_win window;
+    window.setModal(true);
+    window.exec();
+}
+
+
+
+
+void sparrvio::on_pushButton_x_clicked()
+{
+    global::flag_x_value = true;
+    QPushButton *button = (QPushButton *) sender();
+    if (ui->result->text().endsWith("0") && ui->result->text().size() == 1) {
+        ui->result->setText("x");
+    } else {
+            ui->result->setText(ui->result->text() + "x");
+        }
 }
 

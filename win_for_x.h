@@ -2,6 +2,7 @@
 #define WIN_FOR_X_H
 
 #include <QDialog>
+#include <QString>
 
 namespace Ui {
 class win_for_x;
@@ -16,7 +17,7 @@ public:
     ~win_for_x();
 
 private slots:
-    void on_pushButton_clicked();
+    void on_pushButton_ok_clicked();
 
 private:
     Ui::win_for_x *ui;

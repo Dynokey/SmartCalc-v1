@@ -45,7 +45,7 @@ typedef struct {
   int num;
 } s21_SmartCalc[SIZE];
 
-int parser(char* str, s21_SmartCalc data);
+int parser(char* str, s21_SmartCalc data, double x);
 void init_struct(s21_SmartCalc);
 void print_struct(s21_SmartCalc, int, int);
 void if_digit(char* str, s21_SmartCalc, int);
@@ -55,7 +55,7 @@ void print_struct_for_str(s21_SmartCalc src);
 int validator(char*);
 double calc(s21_SmartCalc from_notation);
 void str(char* arr);
-int my_main(char* str, double*);
+int my_main(char* str, double* result, double x);
 int credit_calc_ann(char* str_sum, char* str_mounth, char* str_percen,
                        double* str_gen_pay, double* str_over_pay,
                        double* str_pay);

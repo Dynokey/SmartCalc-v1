@@ -9,9 +9,13 @@
 #include <QInputDialog>
 #include <QtCharts/QValueAxis>
 #include <QTextEdit>
+#include <QDialog>
 #include <iostream>
-#include <creditcalc.h>
-#include <win_for_x.h>
+#include "creditcalc.h"
+#include "win_for_x.h"
+#include "graf_win.h"
+#include "qcustomplot.h"
+#include "global.h"
 
 extern "C" {
 #include "src/s21_SmartCalc.h"
@@ -55,8 +59,10 @@ private slots:
     void on_pushButton_scale_clicked();
     void on_pushButton_BackSpace_clicked();
 
-    void on_pushButtonCredit_clicked();
-    void on_pushButton_X_clicked();
+    void on_pushButton_Credit_clicked();
+    void on_pushButton_x_eq_clicked();
     void on_pushButton_t_clicked();
+    void on_pushButton_graf_clicked();
+    void on_pushButton_x_clicked();
 };
 #endif // SPARRVIO_H
