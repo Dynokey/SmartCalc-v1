@@ -1476,6 +1476,45 @@ QPushButton:pressed {
       </property>
      </widget>
     </item>
+    <item row="7" column="5">
+     <widget class="QPushButton" name="pushButton_un_sign">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>32</pointsize>
+        <bold>false</bold>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	border: 2px solid gray;
+ 	border-radius: 35px;
+	background-color:rgb(216, 214, 218);
+	margin: 0px
+}
+
+QPushButton:pressed {
+	background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, 
+									stop:  0 #dadbde, stop: 1 #f6f7fa);
+}</string>
+      </property>
+      <property name="text">
+       <string>+/-</string>
+      </property>
+     </widget>
+    </item>
    </layout>
   </widget>
  </widget>

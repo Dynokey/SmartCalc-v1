@@ -51,6 +51,12 @@ endif()
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Users/sparrvio/SmartCalc/*.cpp")
 set(OLD_GLOB
   "/Users/sparrvio/SmartCalc/build/CMakeFiles/3.23.0/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+  "/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/EWIEGA46WW/moc_creditcalc.cpp"
+  "/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/EWIEGA46WW/moc_graf_win.cpp"
+  "/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/EWIEGA46WW/moc_qcustomplot.cpp"
+  "/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/EWIEGA46WW/moc_sparrvio.cpp"
+  "/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/EWIEGA46WW/moc_win_for_x.cpp"
+  "/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/mocs_compilation.cpp"
   "/Users/sparrvio/SmartCalc/creditcalc.cpp"
   "/Users/sparrvio/SmartCalc/global.cpp"
   "/Users/sparrvio/SmartCalc/graf_win.cpp"
@@ -77,6 +83,11 @@ endif()
 # _directory_contents at /usr/local/lib/cmake/Qt6LinguistTools/Qt6LinguistToolsMacros.cmake:79 (file)
 file(GLOB_RECURSE NEW_GLOB LIST_DIRECTORIES false "/Users/sparrvio/SmartCalc/*.h")
 set(OLD_GLOB
+  "/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/include/ui_creditcalc.h"
+  "/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/include/ui_graf_win.h"
+  "/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/include/ui_sparrvio.h"
+  "/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/include/ui_win_for_x.h"
+  "/Users/sparrvio/SmartCalc/build/SmartCalc_autogen/moc_predefs.h"
   "/Users/sparrvio/SmartCalc/creditcalc.h"
   "/Users/sparrvio/SmartCalc/global.h"
   "/Users/sparrvio/SmartCalc/graf_win.h"

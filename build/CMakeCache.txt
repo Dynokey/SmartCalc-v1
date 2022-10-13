@@ -142,7 +142,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=SmartCalc
+CMAKE_PROJECT_NAME:STATIC=SmartCalc_g
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION:STATIC=0.1
@@ -274,6 +274,15 @@ SmartCalc_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 SmartCalc_SOURCE_DIR:STATIC=/Users/sparrvio/SmartCalc
+
+//Value Computed by CMake
+SmartCalc_g_BINARY_DIR:STATIC=/Users/sparrvio/SmartCalc/build
+
+//Value Computed by CMake
+SmartCalc_g_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+SmartCalc_g_SOURCE_DIR:STATIC=/Users/sparrvio/SmartCalc
 
 //Path to a library.
 WrapOpenGL_AGL:FILEPATH=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/System/Library/Frameworks/AGL.framework

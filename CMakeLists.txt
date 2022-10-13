@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(SmartCalc VERSION 0.1 LANGUAGES CXX C)
+project(SmartCalc_g VERSION 0.1 LANGUAGES CXX C)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 

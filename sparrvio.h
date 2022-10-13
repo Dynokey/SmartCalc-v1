@@ -2,6 +2,8 @@
 #define SPARRVIO_H
 
 #include <QMainWindow>
+#include <QVector>
+#include <QtMath>
 #include <QtWidgets/QWidget>
 #include <QInputDialog>
 #include <QtCharts/QValueAxis>
@@ -28,8 +30,9 @@ class sparrvio : public QMainWindow
 public:
     sparrvio(QWidget *parent = nullptr);
     ~sparrvio();
-    int flag = 0;
+    int flag_press_eq = 0;
     int clicked_t = 0;
+    int count_un_sing = 0;
 
 private:
     Ui::sparrvio *ui;
@@ -57,5 +60,6 @@ private slots:
     void on_pushButton_t_clicked();
     void on_pushButton_graf_clicked();
     void on_pushButton_x_clicked();
+    void on_pushButton_un_sign_clicked();
 };
 #endif // SPARRVIO_H

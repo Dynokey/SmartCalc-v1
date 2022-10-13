@@ -1,3 +1,4 @@
+
 #include "win_for_x.h"
 #include "ui_win_for_x.h"
 
@@ -20,8 +21,6 @@ win_for_x::~win_for_x()
 
 void win_for_x::on_pushButton_ok_clicked()
 {
-//        QByteArray str = ui->x_text->toPlainText().toLocal8Bit();
-//        std::string s = ui->x_text->toPlainText().toStdString();
 
         QString str = ui->x_text->toPlainText();
 

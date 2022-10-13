@@ -1,15 +1,9 @@
 #include "sparrvio.h"
-#include "src/s21_SmartCalc.h"
+//#include "src/s21_SmartCalc.h"
 #include <QApplication>
 #include <QLocale>
 #include <QTranslator>
 
-//#include <QtWidgets/QWidget>
-//#include <QSplineSeries>
-//#include <QtCharts>
-//#include <QChartView>
-//#include <QMainWindow>
-//#include <QtCharts/QValueAxis>
 
 int main(int argc, char *argv[])
 {

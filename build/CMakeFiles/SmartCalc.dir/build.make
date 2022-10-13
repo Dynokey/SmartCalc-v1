@@ -71,6 +71,17 @@ include CMakeFiles/SmartCalc.dir/flags.make
 
 ../SmartCalc_ru_RU.ts: CMakeFiles/3.23.0/CompilerIdC/CMakeCCompilerId.c
 ../SmartCalc_ru_RU.ts: CMakeFiles/3.23.0/CompilerIdCXX/CMakeCXXCompilerId.cpp
+../SmartCalc_ru_RU.ts: SmartCalc_autogen/EWIEGA46WW/moc_creditcalc.cpp
+../SmartCalc_ru_RU.ts: SmartCalc_autogen/EWIEGA46WW/moc_graf_win.cpp
+../SmartCalc_ru_RU.ts: SmartCalc_autogen/EWIEGA46WW/moc_qcustomplot.cpp
+../SmartCalc_ru_RU.ts: SmartCalc_autogen/EWIEGA46WW/moc_sparrvio.cpp
+../SmartCalc_ru_RU.ts: SmartCalc_autogen/EWIEGA46WW/moc_win_for_x.cpp
+../SmartCalc_ru_RU.ts: SmartCalc_autogen/include/ui_creditcalc.h
+../SmartCalc_ru_RU.ts: SmartCalc_autogen/include/ui_graf_win.h
+../SmartCalc_ru_RU.ts: SmartCalc_autogen/include/ui_sparrvio.h
+../SmartCalc_ru_RU.ts: SmartCalc_autogen/include/ui_win_for_x.h
+../SmartCalc_ru_RU.ts: SmartCalc_autogen/moc_predefs.h
+../SmartCalc_ru_RU.ts: SmartCalc_autogen/mocs_compilation.cpp
 ../SmartCalc_ru_RU.ts: ../creditcalc.cpp
 ../SmartCalc_ru_RU.ts: ../creditcalc.h
 ../SmartCalc_ru_RU.ts: ../creditcalc.ui
