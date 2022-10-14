@@ -74,6 +74,7 @@ int graf_win::x_correct(double* x_from, double* x_before){
     if(x_1 >= x_2){
         ret = false;
     }
+
     if(ret == true){
         *x_from = x_1;
         *x_before = x_2;

@@ -107,6 +107,9 @@ include CMakeFiles/SmartCalc.dir/flags.make
 ../SmartCalc_ru_RU.ts: ../src/notation.c
 ../SmartCalc_ru_RU.ts: ../src/parser.c
 ../SmartCalc_ru_RU.ts: ../src/s21_SmartCalc.h
+../SmartCalc_ru_RU.ts: ../src/test/test_SmartCalc.c
+../SmartCalc_ru_RU.ts: ../src/test/test_SmartCalc.h
+../SmartCalc_ru_RU.ts: ../src/test/test_validator.c
 ../SmartCalc_ru_RU.ts: ../src/validator.c
 ../SmartCalc_ru_RU.ts: ../win_for_x.cpp
 ../SmartCalc_ru_RU.ts: ../win_for_x.h

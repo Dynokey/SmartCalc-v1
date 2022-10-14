@@ -42,7 +42,7 @@ int validator(char* str) {
       ret = 1;
     }
     // перед и после mod должно быть число
-    if (str[i] == 'm' &&
+    if (str[i] == '%' &&
         (strchr(sign, str[i - 1]) || strchr(sign, str[i + 1]))) {
       ret = 1;
     }

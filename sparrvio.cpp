@@ -72,6 +72,10 @@ void sparrvio::on_pushButton_ON_clicked()
 }
 
 void sparrvio::on_pushButton_eq_clicked() {
+
+  ui->repeat_result->clear();
+  ui->repeat_result->setText(ui->result->text());
+
   flag_press_eq = 1;
   clicked_t = 0;
   if (global::flag_x_value == true) {
@@ -104,6 +108,7 @@ void sparrvio::on_pushButton_eq_clicked() {
       ui->result->clear();
       ui->result->setText("Incorrect Input");
     }
+    ui->repeat_result->setText(ui->repeat_result->text() + " = " + ui->result->text());
     global::x_value = 0.0;
     global::flag_x_value = false;
   }
@@ -342,7 +347,7 @@ void sparrvio::on_pushButton_x_clicked() {
 }
 
 void sparrvio::on_pushButton_un_sign_clicked() {
-  QString char_num = "1234567890.)x";
+  QString char_num = "1234567890.)x^";
   QString str;
   str = ui->result->text();
   int len = str.length() - 1;

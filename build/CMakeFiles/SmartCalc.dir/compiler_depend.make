@@ -1080,6 +1080,8 @@ CMakeFiles/SmartCalc.dir/SmartCalc_autogen/mocs_compilation.cpp.o: SmartCalc_aut
   SmartCalc_autogen/EWIEGA46WW/moc_sparrvio.cpp \
   ../sparrvio.h \
   /usr/local/lib/QtWidgets.framework/Headers/QMainWindow \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/QtMath \
   /usr/local/lib/QtWidgets.framework/Headers/QInputDialog \
   /usr/local/include/QtCharts/QValueAxis \
   /usr/local/include/QtCharts/qvalueaxis.h \
@@ -1441,6 +1443,10 @@ CMakeFiles/SmartCalc.dir/creditcalc.cpp.o: ../creditcalc.cpp \
   /usr/local/lib/QtWidgets.framework/Headers/QMainWindow \
   /usr/local/lib/QtWidgets.framework/Headers/qmainwindow.h \
   /usr/local/include/QtWidgets/qtabwidget.h \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/qvector.h \
+  /usr/local/lib/QtCore.framework/Headers/QtMath \
+  /usr/local/lib/QtCore.framework/Headers/qmath.h \
   /usr/local/lib/QtWidgets.framework/Headers/QInputDialog \
   /usr/local/lib/QtWidgets.framework/Headers/qinputdialog.h \
   /usr/local/include/QtWidgets/qlineedit.h \
@@ -1555,7 +1561,6 @@ CMakeFiles/SmartCalc.dir/creditcalc.cpp.o: ../creditcalc.cpp \
   /usr/local/include/QtGui/QPixmap \
   /usr/local/lib/QtGui.framework/Headers/qpixmap.h \
   /usr/local/include/QtCore/QVector \
-  /usr/local/lib/QtCore.framework/Headers/qvector.h \
   /usr/local/include/QtCore/QString \
   /usr/local/lib/QtCore.framework/Headers/qstring.h \
   /usr/local/include/QtCore/QDateTime \
@@ -1573,7 +1578,6 @@ CMakeFiles/SmartCalc.dir/creditcalc.cpp.o: ../creditcalc.cpp \
   /usr/local/lib/QtCore.framework/Headers/qcache.h \
   /usr/local/include/QtCore/QMargins \
   /usr/local/lib/QtCore.framework/Headers/qmargins.h \
-  /usr/local/lib/QtCore.framework/Headers/qmath.h \
   /usr/local/lib/QtCore.framework/Headers/QtNumeric \
   /usr/local/lib/QtCore.framework/Headers/qnumeric.h \
   /usr/local/include/QtPrintSupport/QtPrintSupport \
@@ -2493,6 +2497,10 @@ CMakeFiles/SmartCalc.dir/global.cpp.o: ../global.cpp \
   /usr/local/include/QtGui/qkeysequence.h \
   /usr/local/include/QtWidgets/qtabwidget.h \
   /usr/local/include/QtGui/qicon.h \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/qvector.h \
+  /usr/local/lib/QtCore.framework/Headers/QtMath \
+  /usr/local/lib/QtCore.framework/Headers/qmath.h \
   /usr/local/include/QtWidgets/QWidget \
   /usr/local/lib/QtWidgets.framework/Headers/qwidget.h \
   /usr/local/lib/QtWidgets.framework/Headers/QInputDialog \
@@ -2629,7 +2637,6 @@ CMakeFiles/SmartCalc.dir/global.cpp.o: ../global.cpp \
   /usr/local/include/QtGui/QPixmap \
   /usr/local/lib/QtGui.framework/Headers/qpixmap.h \
   /usr/local/include/QtCore/QVector \
-  /usr/local/lib/QtCore.framework/Headers/qvector.h \
   /usr/local/include/QtCore/QString \
   /usr/local/include/QtCore/QDateTime \
   /usr/local/lib/QtCore.framework/Headers/qdatetime.h \
@@ -2647,7 +2654,6 @@ CMakeFiles/SmartCalc.dir/global.cpp.o: ../global.cpp \
   /usr/local/lib/QtCore.framework/Headers/qcache.h \
   /usr/local/include/QtCore/QMargins \
   /usr/local/lib/QtCore.framework/Headers/qmargins.h \
-  /usr/local/lib/QtCore.framework/Headers/qmath.h \
   /usr/local/lib/QtCore.framework/Headers/QtNumeric \
   /usr/local/lib/QtCore.framework/Headers/qnumeric.h \
   /usr/local/include/QtPrintSupport/QtPrintSupport \
@@ -3603,6 +3609,24 @@ CMakeFiles/SmartCalc.dir/graf_win.cpp.o: ../graf_win.cpp \
   /usr/local/include/QtCore/qvariant.h \
   /usr/local/include/QtGui/qguiapplication_platform.h \
   /usr/local/include/QtWidgets/QDialog \
+  /usr/local/include/QtWidgets/QLabel \
+  /usr/local/lib/QtWidgets.framework/Headers/qlabel.h \
+  /usr/local/include/QtWidgets/qframe.h \
+  /usr/local/include/QtGui/qpicture.h \
+  /usr/local/include/QtCore/qiodevice.h \
+  /usr/local/include/QtGui/qtextdocument.h \
+  /usr/local/include/QtCore/qurl.h \
+  /usr/local/include/QtWidgets/QPushButton \
+  /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h \
+  /usr/local/include/QtWidgets/qabstractbutton.h \
+  /usr/local/include/QtGui/qicon.h \
+  /usr/local/include/QtWidgets/QTextEdit \
+  /usr/local/lib/QtWidgets.framework/Headers/qtextedit.h \
+  /usr/local/include/QtWidgets/qabstractscrollarea.h \
+  /usr/local/include/QtGui/qtextoption.h \
+  /usr/local/include/QtGui/qtextcursor.h \
+  /usr/local/include/QtGui/qtextformat.h \
+  /usr/local/include/QtGui/qpen.h \
   ../qcustomplot.h \
   /usr/local/include/QtCore/QObject \
   /usr/local/lib/QtCore.framework/Headers/qobject.h \
@@ -3615,15 +3639,11 @@ CMakeFiles/SmartCalc.dir/graf_win.cpp.o: ../graf_win.cpp \
   /usr/local/include/QtCore/qbasictimer.h \
   /usr/local/include/QtGui/QPainter \
   /usr/local/lib/QtGui.framework/Headers/qpainter.h \
-  /usr/local/include/QtGui/qtextoption.h \
-  /usr/local/include/QtGui/qpen.h \
   /usr/local/include/QtGui/QPainterPath \
   /usr/local/lib/QtGui.framework/Headers/qpainterpath.h \
   /usr/local/include/QtGui/QPaintEvent \
   /usr/local/lib/QtGui.framework/Headers/qevent.h \
-  /usr/local/include/QtCore/qiodevice.h \
   /usr/local/include/QtCore/qpointer.h \
-  /usr/local/include/QtCore/qurl.h \
   /usr/local/include/QtGui/qeventpoint.h \
   /usr/local/include/QtGui/qvector2d.h \
   /usr/local/include/QtGui/qvectornd.h \
@@ -4029,16 +4049,12 @@ CMakeFiles/SmartCalc.dir/graf_win.cpp.o: ../graf_win.cpp \
   /usr/local/include/QtGui/QtGuiDepends \
   /usr/local/lib/QtGui.framework/Headers/qtguiglobal.h \
   /usr/local/lib/QtGui.framework/Headers/qabstractfileiconprovider.h \
-  /usr/local/include/QtGui/qicon.h \
   /usr/local/lib/QtGui.framework/Headers/qabstracttextdocumentlayout.h \
   /usr/local/include/QtGui/qtextlayout.h \
   /usr/local/include/QtGui/qevent.h \
   /usr/local/include/QtGui/qglyphrun.h \
   /usr/local/include/QtGui/qrawfont.h \
   /usr/local/include/QtGui/qfontdatabase.h \
-  /usr/local/include/QtGui/qtextcursor.h \
-  /usr/local/include/QtGui/qtextformat.h \
-  /usr/local/include/QtGui/qtextdocument.h \
   /usr/local/lib/QtGui.framework/Headers/qaccessible.h \
   /usr/local/lib/QtGui.framework/Headers/qaccessiblebridge.h \
   /usr/local/include/QtCore/qfactoryinterface.h \
@@ -4189,9 +4205,7 @@ CMakeFiles/SmartCalc.dir/graf_win.cpp.o: ../graf_win.cpp \
   /usr/local/include/QtWidgets/qtabbar.h \
   /usr/local/include/QtWidgets/qtabwidget.h \
   /usr/local/include/QtWidgets/qrubberband.h \
-  /usr/local/include/QtWidgets/qframe.h \
   /usr/local/lib/QtWidgets.framework/Headers/qabstractitemview.h \
-  /usr/local/include/QtWidgets/qabstractscrollarea.h \
   /usr/local/include/QtCore/qitemselectionmodel.h \
   /usr/local/include/QtWidgets/qabstractitemdelegate.h \
   /usr/local/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
@@ -4211,7 +4225,6 @@ CMakeFiles/SmartCalc.dir/graf_win.cpp.o: ../graf_win.cpp \
   /usr/local/lib/QtWidgets.framework/Headers/qbuttongroup.h \
   /usr/local/lib/QtWidgets.framework/Headers/qcalendarwidget.h \
   /usr/local/lib/QtWidgets.framework/Headers/qcheckbox.h \
-  /usr/local/include/QtWidgets/qabstractbutton.h \
   /usr/local/lib/QtWidgets.framework/Headers/qcolordialog.h \
   /usr/local/include/QtWidgets/qdialog.h \
   /usr/local/lib/QtWidgets.framework/Headers/qcolormap.h \
@@ -4276,8 +4289,6 @@ CMakeFiles/SmartCalc.dir/graf_win.cpp.o: ../graf_win.cpp \
   /usr/local/lib/QtWidgets.framework/Headers/qitemeditorfactory.h \
   /usr/local/include/QtCore/qmetaobject.h \
   /usr/local/lib/QtWidgets.framework/Headers/qkeysequenceedit.h \
-  /usr/local/lib/QtWidgets.framework/Headers/qlabel.h \
-  /usr/local/include/QtGui/qpicture.h \
   /usr/local/lib/QtWidgets.framework/Headers/qlayoutitem.h \
   /usr/local/lib/QtWidgets.framework/Headers/qlcdnumber.h \
   /usr/local/lib/QtWidgets.framework/Headers/qlineedit.h \
@@ -4298,7 +4309,6 @@ CMakeFiles/SmartCalc.dir/graf_win.cpp.o: ../graf_win.cpp \
   /usr/local/lib/QtWidgets.framework/Headers/qprogressdialog.h \
   /usr/local/lib/QtWidgets.framework/Headers/qproxystyle.h \
   /usr/local/include/QtWidgets/QCommonStyle \
-  /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h \
   /usr/local/lib/QtWidgets.framework/Headers/qradiobutton.h \
   /usr/local/lib/QtWidgets.framework/Headers/qrubberband.h \
   /usr/local/lib/QtWidgets.framework/Headers/qscrollarea.h \
@@ -4332,7 +4342,6 @@ CMakeFiles/SmartCalc.dir/graf_win.cpp.o: ../graf_win.cpp \
   /usr/local/include/QtWidgets/qtableview.h \
   /usr/local/lib/QtWidgets.framework/Headers/qtabwidget.h \
   /usr/local/lib/QtWidgets.framework/Headers/qtextbrowser.h \
-  /usr/local/lib/QtWidgets.framework/Headers/qtextedit.h \
   /usr/local/lib/QtWidgets.framework/Headers/qtoolbar.h \
   /usr/local/lib/QtWidgets.framework/Headers/qtoolbox.h \
   /usr/local/lib/QtWidgets.framework/Headers/qtoolbutton.h \
@@ -4367,6 +4376,8 @@ CMakeFiles/SmartCalc.dir/graf_win.cpp.o: ../graf_win.cpp \
   /usr/local/include/QtCore/QTimeZone \
   ../sparrvio.h \
   /usr/local/lib/QtWidgets.framework/Headers/QMainWindow \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/QtMath \
   /usr/local/lib/QtWidgets.framework/Headers/QInputDialog \
   /usr/local/include/QtCharts/QValueAxis \
   /usr/local/include/QtCharts/qvalueaxis.h \
@@ -4674,6 +4685,10 @@ CMakeFiles/SmartCalc.dir/main.cpp.o: ../main.cpp \
   /usr/local/include/QtGui/qkeysequence.h \
   /usr/local/include/QtWidgets/qtabwidget.h \
   /usr/local/include/QtGui/qicon.h \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/qvector.h \
+  /usr/local/lib/QtCore.framework/Headers/QtMath \
+  /usr/local/lib/QtCore.framework/Headers/qmath.h \
   /usr/local/include/QtWidgets/QWidget \
   /usr/local/lib/QtWidgets.framework/Headers/qwidget.h \
   /usr/local/lib/QtWidgets.framework/Headers/QInputDialog \
@@ -4810,7 +4825,6 @@ CMakeFiles/SmartCalc.dir/main.cpp.o: ../main.cpp \
   /usr/local/include/QtGui/QPixmap \
   /usr/local/lib/QtGui.framework/Headers/qpixmap.h \
   /usr/local/include/QtCore/QVector \
-  /usr/local/lib/QtCore.framework/Headers/qvector.h \
   /usr/local/include/QtCore/QString \
   /usr/local/lib/QtCore.framework/Headers/qstring.h \
   /usr/local/include/QtCore/QDateTime \
@@ -4829,7 +4843,6 @@ CMakeFiles/SmartCalc.dir/main.cpp.o: ../main.cpp \
   /usr/local/lib/QtCore.framework/Headers/qcache.h \
   /usr/local/include/QtCore/QMargins \
   /usr/local/lib/QtCore.framework/Headers/qmargins.h \
-  /usr/local/lib/QtCore.framework/Headers/qmath.h \
   /usr/local/lib/QtCore.framework/Headers/QtNumeric \
   /usr/local/lib/QtCore.framework/Headers/qnumeric.h \
   /usr/local/include/QtPrintSupport/QtPrintSupport \
@@ -6837,6 +6850,10 @@ CMakeFiles/SmartCalc.dir/sparrvio.cpp.o: ../sparrvio.cpp \
   /usr/local/include/QtGui/qkeysequence.h \
   /usr/local/include/QtWidgets/qtabwidget.h \
   /usr/local/include/QtGui/qicon.h \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/qvector.h \
+  /usr/local/lib/QtCore.framework/Headers/QtMath \
+  /usr/local/lib/QtCore.framework/Headers/qmath.h \
   /usr/local/include/QtWidgets/QWidget \
   /usr/local/lib/QtWidgets.framework/Headers/qwidget.h \
   /usr/local/lib/QtWidgets.framework/Headers/QInputDialog \
@@ -6973,7 +6990,6 @@ CMakeFiles/SmartCalc.dir/sparrvio.cpp.o: ../sparrvio.cpp \
   /usr/local/include/QtGui/QPixmap \
   /usr/local/lib/QtGui.framework/Headers/qpixmap.h \
   /usr/local/include/QtCore/QVector \
-  /usr/local/lib/QtCore.framework/Headers/qvector.h \
   /usr/local/include/QtCore/QString \
   /usr/local/lib/QtCore.framework/Headers/qstring.h \
   /usr/local/include/QtCore/QDateTime \
@@ -6992,7 +7008,6 @@ CMakeFiles/SmartCalc.dir/sparrvio.cpp.o: ../sparrvio.cpp \
   /usr/local/lib/QtCore.framework/Headers/qcache.h \
   /usr/local/include/QtCore/QMargins \
   /usr/local/lib/QtCore.framework/Headers/qmargins.h \
-  /usr/local/lib/QtCore.framework/Headers/qmath.h \
   /usr/local/lib/QtCore.framework/Headers/QtNumeric \
   /usr/local/lib/QtCore.framework/Headers/qnumeric.h \
   /usr/local/include/QtPrintSupport/QtPrintSupport \
@@ -8519,6 +8534,10 @@ CMakeFiles/SmartCalc.dir/win_for_x.cpp.o: ../win_for_x.cpp \
   /usr/local/lib/QtWidgets.framework/Headers/qmainwindow.h \
   /usr/local/include/QtWidgets/qtabwidget.h \
   /usr/local/include/QtGui/qicon.h \
+  /usr/local/lib/QtCore.framework/Headers/QVector \
+  /usr/local/lib/QtCore.framework/Headers/qvector.h \
+  /usr/local/lib/QtCore.framework/Headers/QtMath \
+  /usr/local/lib/QtCore.framework/Headers/qmath.h \
   /usr/local/include/QtWidgets/QWidget \
   /usr/local/lib/QtWidgets.framework/Headers/qwidget.h \
   /usr/local/lib/QtWidgets.framework/Headers/QInputDialog \
@@ -8653,7 +8672,6 @@ CMakeFiles/SmartCalc.dir/win_for_x.cpp.o: ../win_for_x.cpp \
   /usr/local/include/QtGui/QPixmap \
   /usr/local/lib/QtGui.framework/Headers/qpixmap.h \
   /usr/local/include/QtCore/QVector \
-  /usr/local/lib/QtCore.framework/Headers/qvector.h \
   /usr/local/include/QtCore/QString \
   /usr/local/lib/QtCore.framework/Headers/qstring.h \
   /usr/local/include/QtCore/QDateTime \
@@ -8672,7 +8690,6 @@ CMakeFiles/SmartCalc.dir/win_for_x.cpp.o: ../win_for_x.cpp \
   /usr/local/lib/QtCore.framework/Headers/qcache.h \
   /usr/local/include/QtCore/QMargins \
   /usr/local/lib/QtCore.framework/Headers/qmargins.h \
-  /usr/local/lib/QtCore.framework/Headers/qmath.h \
   /usr/local/lib/QtCore.framework/Headers/QtNumeric \
   /usr/local/lib/QtCore.framework/Headers/qnumeric.h \
   /usr/local/include/QtPrintSupport/QtPrintSupport \
@@ -9372,6 +9389,8 @@ SmartCalc_autogen/include/ui_win_for_x.h:
 
 /usr/local/include/QtCharts/QAbstractAxis:
 
+/usr/local/lib/QtCore.framework/Headers/QtMath:
+
 /usr/local/lib/QtWidgets.framework/Headers/QMainWindow:
 
 ../sparrvio.h:
@@ -9687,6 +9706,8 @@ SmartCalc_autogen/EWIEGA46WW/moc_win_for_x.cpp:
 /usr/local/include/QtGui/qpagelayout.h:
 
 /usr/local/lib/QtGui.framework/Headers/qpagedpaintdevice.h:
+
+/usr/local/include/QtWidgets/QTextEdit:
 
 /usr/local/include/QtGui/qopenglfunctions.h:
 
@@ -11015,6 +11036,8 @@ SmartCalc_autogen/EWIEGA46WW/moc_graf_win.cpp:
 /usr/local/lib/QtCore.framework/Headers/qanimationgroup.h:
 
 /usr/local/lib/QtWidgets.framework/Headers/QApplication:
+
+/usr/local/lib/QtCore.framework/Headers/QVector:
 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk/usr/include/sys/_pthread/_pthread_rwlock_t.h:
 

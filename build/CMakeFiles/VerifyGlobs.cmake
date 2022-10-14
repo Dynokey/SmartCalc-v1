@@ -13,6 +13,8 @@ set(OLD_GLOB
   "/Users/sparrvio/SmartCalc/src/new_main.c"
   "/Users/sparrvio/SmartCalc/src/notation.c"
   "/Users/sparrvio/SmartCalc/src/parser.c"
+  "/Users/sparrvio/SmartCalc/src/test/test_SmartCalc.c"
+  "/Users/sparrvio/SmartCalc/src/test/test_validator.c"
   "/Users/sparrvio/SmartCalc/src/validator.c"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
@@ -95,6 +97,7 @@ set(OLD_GLOB
   "/Users/sparrvio/SmartCalc/qcustomplot.h"
   "/Users/sparrvio/SmartCalc/sparrvio.h"
   "/Users/sparrvio/SmartCalc/src/s21_SmartCalc.h"
+  "/Users/sparrvio/SmartCalc/src/test/test_SmartCalc.h"
   "/Users/sparrvio/SmartCalc/win_for_x.h"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
