@@ -35,7 +35,7 @@ typedef enum {
   bracket_l = 18,  // (
   bracket_r = 19,  // )
   un_minus = 20,   // u
-  delet = -1
+  delet = -1,
 } type_t;
 
 typedef struct {

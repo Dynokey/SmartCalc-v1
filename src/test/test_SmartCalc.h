@@ -6,11 +6,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-Suite *suite_validator();
-Suite *suite_parcer();
-Suite *suite_notation();
-Suite *suite_calc();
-Suite *suite_credit_calc();
+// Suite *suite_validator();
+// Suite *suite_parcer();
+// Suite *suite_notation();
+// Suite *suite_calc();
+// Suite *suite_credit_calc();
+// Suite *suite_my_main();
 
 // Suite *suite_credit_calc(void);
 

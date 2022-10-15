@@ -129,8 +129,6 @@ int parser(char* str, s21_SmartCalc tmp, double x) {
           tmp[num_struct].num = num_struct;
           num_struct++;
           break;
-        case ' ':
-          break;
         default:
           break;
       }
@@ -156,100 +154,100 @@ void if_digit(char* str, s21_SmartCalc src, int n_struct) {
   src[n_struct].num = n_struct;
 }
 
-void print_struct(s21_SmartCalc src, int in, int out) {
-  for (int i = in; i <= out; i++) {
-    if (i % 2 == 0)
-      printf(
-          "%sstruct № %d\nvalue = %.2f priority = %d type = %d num = "
-          "%d%s\n",
-          YELLOW, i, src[i].value, src[i].priority, src[i].type, src[i].num,
-          RESET);
-    else
-      printf(
-          "%sstruct № %d\nvalue = %.2f priority = %d type = %d num = "
-          "%d%s\n",
-          GREEN, i, src[i].value, src[i].priority, src[i].type, src[i].num,
-          RESET);
-  }
-}
+// void print_struct(s21_SmartCalc src, int in, int out) {
+//   for (int i = in; i <= out; i++) {
+//     if (i % 2 == 0)
+//       printf(
+//           "%sstruct № %d\nvalue = %.2f priority = %d type = %d num = "
+//           "%d%s\n",
+//           YELLOW, i, src[i].value, src[i].priority, src[i].type, src[i].num,
+//           RESET);
+//     else
+//       printf(
+//           "%sstruct № %d\nvalue = %.2f priority = %d type = %d num = "
+//           "%d%s\n",
+//           GREEN, i, src[i].value, src[i].priority, src[i].type, src[i].num,
+//           RESET);
+//   }
+// }
 
-void print_struct_for_str(s21_SmartCalc src) {
-  char mod[] = "mod";
-  char sin[] = "sin";
-  char cos[] = "cos";
-  char tan[] = "tan";
-  char acos[] = "acos";
-  char asin[] = "asin";
-  char atan[] = "atan";
-  char sqrt[] = "sqrt";
-  char ln[] = "ln";
-  char log[] = "log";
+// void print_struct_for_str(s21_SmartCalc src) {
+//   char mod[] = "mod";
+//   char sin[] = "sin";
+//   char cos[] = "cos";
+//   char tan[] = "tan";
+//   char acos[] = "acos";
+//   char asin[] = "asin";
+//   char atan[] = "atan";
+//   char sqrt[] = "sqrt";
+//   char ln[] = "ln";
+//   char log[] = "log";
 
-  for (int i = 0; src[i].num != -1; i++) {
-    switch (src[i].type) {
-      case 1:
-        printf("%s%.2f %s ", YELLOW, src[i].value, RESET);
-        break;
-      case 2:
-        printf("%s%c %s ", YELLOW, 'x', RESET);
-        break;
-      case 3:
-        printf("%s%c %s ", YELLOW, '+', RESET);
-        break;
-      case 4:
-        printf("%s%c %s ", YELLOW, '-', RESET);
-        break;
-      case 5:
-        printf("%s%c %s ", YELLOW, '*', RESET);
-        break;
-      case 6:
-        printf("%s%c %s ", YELLOW, '/', RESET);
-        break;
-      case 7:
-        printf("%s%c %s ", YELLOW, '^', RESET);
-        break;
-      case 8:
-        printf("%s%s %s ", YELLOW, mod, RESET);
-        break;
-      case 9:
-        printf("%s%s %s ", YELLOW, sin, RESET);
-        break;
-      case 10:
-        printf("%s%s %s ", YELLOW, cos, RESET);
-        break;
-      case 11:
-        printf("%s%s %s ", YELLOW, tan, RESET);
-        break;
-      case 12:
-        printf("%s%s %s ", YELLOW, acos, RESET);
-        break;
-      case 13:
-        printf("%s%s %s ", YELLOW, asin, RESET);
-        break;
-      case 14:
-        printf("%s%s %s ", YELLOW, atan, RESET);
-        break;
-      case 15:
-        printf("%s%s %s ", YELLOW, sqrt, RESET);
-        break;
-      case 16:
-        printf("%s%s %s ", YELLOW, ln, RESET);
-        break;
-      case 17:
-        printf("%s%s %s ", YELLOW, log, RESET);
-        break;
-      case 18:
-        printf("%s%c %s ", YELLOW, '(', RESET);
-        break;
-      case 19:
-        printf("%s%c %s ", YELLOW, ')', RESET);
-        break;
-      case 20:
-        printf("%s%c %s ", YELLOW, '~', RESET);
-        break;
-      default:
-        break;
-    }
-  }
-  printf("\n");
-}
+//   for (int i = 0; src[i].num != -1; i++) {
+//     switch (src[i].type) {
+//       case 1:
+//         printf("%s%.2f %s ", YELLOW, src[i].value, RESET);
+//         break;
+//       case 2:
+//         printf("%s%c %s ", YELLOW, 'x', RESET);
+//         break;
+//       case 3:
+//         printf("%s%c %s ", YELLOW, '+', RESET);
+//         break;
+//       case 4:
+//         printf("%s%c %s ", YELLOW, '-', RESET);
+//         break;
+//       case 5:
+//         printf("%s%c %s ", YELLOW, '*', RESET);
+//         break;
+//       case 6:
+//         printf("%s%c %s ", YELLOW, '/', RESET);
+//         break;
+//       case 7:
+//         printf("%s%c %s ", YELLOW, '^', RESET);
+//         break;
+//       case 8:
+//         printf("%s%s %s ", YELLOW, mod, RESET);
+//         break;
+//       case 9:
+//         printf("%s%s %s ", YELLOW, sin, RESET);
+//         break;
+//       case 10:
+//         printf("%s%s %s ", YELLOW, cos, RESET);
+//         break;
+//       case 11:
+//         printf("%s%s %s ", YELLOW, tan, RESET);
+//         break;
+//       case 12:
+//         printf("%s%s %s ", YELLOW, acos, RESET);
+//         break;
+//       case 13:
+//         printf("%s%s %s ", YELLOW, asin, RESET);
+//         break;
+//       case 14:
+//         printf("%s%s %s ", YELLOW, atan, RESET);
+//         break;
+//       case 15:
+//         printf("%s%s %s ", YELLOW, sqrt, RESET);
+//         break;
+//       case 16:
+//         printf("%s%s %s ", YELLOW, ln, RESET);
+//         break;
+//       case 17:
+//         printf("%s%s %s ", YELLOW, log, RESET);
+//         break;
+//       case 18:
+//         printf("%s%c %s ", YELLOW, '(', RESET);
+//         break;
+//       case 19:
+//         printf("%s%c %s ", YELLOW, ')', RESET);
+//         break;
+//       case 20:
+//         printf("%s%c %s ", YELLOW, '~', RESET);
+//         break;
+//       default:
+//         break;
+//     }
+//   }
+//   printf("\n");
+// }

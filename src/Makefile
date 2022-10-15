@@ -6,15 +6,16 @@ FLAGS_CHECK = -lcheck -lgcov
 
 VAR = $(shell pkg-config --cflags --libs check)
 SRC = $(wildcard *.c)
+# SRC = $(calc.c credit_calc_ann.c credit_calc_diff.c my_main.c notation.c parser.c validator.c s21_SmartCalc.h)
 OBJ = $(SRC:.c=.o)
-test_Smart = $(NAME)
 OBJT = $(OBJ) ./test/test_SmartCalc.c
 TARGET_H = s21_SmartCalc.h
 
 .PHONY: all
 all: s21_SmartCalc 
 
-s21_SmartCalc: clean $(SRC)
+.PHONY: s21_SmartCalc
+s21_SmartCalc: $(SRC)
 	$(CC) $(FLAGS_GRIND) $(SRC) $(TARGET_H) -o s21_SmartCalc.o
 	./s21_SmartCalc.o
 	@rm -rf *.o
