@@ -46,10 +46,10 @@ int validator(char* str) {
         (strchr(sign, str[i - 1]) || strchr(sign, str[i + 1]))) {
       ret = 1;
     }
-    // после вызова функции должна быть '('
-    // if(strchr(sign_func, str[i]) != NULL && str[i + 3] != '(') {
-    //   ret = 1;
-    // }
+    // перед цифрой не может находиться ')'
+    if(i > 0 && strchr(num, str[i]) != NULL && str[i - 1] == ')') {
+      ret = 1;
+    }
     // перед перед функцией не должно быть точки, числа или ')'
     if (i > 0 && strchr(sign_func, str[i]) != NULL &&
         strchr(num, str[i - 1]) != NULL) {
