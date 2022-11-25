@@ -1,3 +1,0 @@
-# Hashes of file build rules.
-17ffb7c9b101888b6904074d58a1b275 ../SmartCalc_ru_RU.ts
-b7d4069ce6956e46847ef71b0a7741ac CMakeFiles/SmartCalc_autogen
